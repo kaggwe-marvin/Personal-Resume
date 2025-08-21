@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ section.title }}</title>
+    <meta name="description" content="{{ section.description }}">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ get_url(path='css/style.css') }}">
+</head>
+
+<body class="bg-[var(--background)] text-[var(--text)] transition-colors duration-300 font-sans">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div class="absolute top-20 left-10 w-40 h-40 rounded-full bg-[var(--primary)] opacity-10 floating"></div>
+        <div class="absolute bottom-10 right-20 w-60 h-60 rounded-full bg-[var(--secondary)] opacity-10 floating"
+            style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/3 right-1/4 w-32 h-32 rounded-full bg-[var(--primary)] opacity-10 floating"
+            style="animation-delay: 4s;"></div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Theme Selector -->
+        <div class="flex justify-end gap-3 mb-6">
+            <div class="theme-selector w-6 h-6 rounded-full bg-blue-500" onclick="changeTheme('blue')"
+                title="Blue Theme"></div>
+            <div class="theme-selector w-6 h-6 rounded-full bg-purple-500" onclick="changeTheme('purple')"
+                title="Purple Theme"></div>
+            <div class="theme-selector w-6 h-6 rounded-full bg-amber-500" onclick="changeTheme('amber')"
+                title="Amber Theme"></div>
+            <button onclick="toggleDarkMode()" class="ml-4 px-3 py-1 rounded-md bg-[var(--primary)] text-white text-xs">
+                <i class="fas fa-moon"></i> Toggle Dark
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-6">
+            <div>
+                <h1 class="text-3xl font-bold mb-1">{{ section.extra.name }}</h1>
+                <h2 class="text-xl text-[var(--primary)] font-semibold mb-2">{{ section.extra.title_role }}</h2>
+                <p class="text-sm opacity-80 max-w-lg">{{ section.extra.bio }}</p>
+            </div>
+            <div class="flex flex-col items-end">
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-envelope mr-2 text-[var(--primary)]"></i>
+                    <span class="text-sm"><a href="mailto:{{ section.extra.email }}">{{ section.extra.email
+                            }}</a></span>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-phone mr-2 text-[var(--primary)]"></i>
+                    <span class="text-sm">{{ section.extra.phone }}</span>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-map-marker-alt mr-2 text-[var(--primary)]"></i>
+                    <span class="text-sm">{{ section.extra.location }}</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-linkedin mr-2 text-[var(--primary)]"></i>
+                    <span class="text-sm"><a href="https://{{ section.extra.linkedin }}">{{ section.extra.linkedin
+                            }}</a></span>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Experience -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Work Experience</h2>
+                    {% for job in section.extra.experience %}
+                    <div class="mb-6{% if not loop.last %} {% endif %}">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold">{{ job.title }}</h3>
+                            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">{{ job.period
+                                }}</span>
+                        </div>
+                        <p class="text-sm text-[var(--primary)] mb-2">{{ job.company }}</p>
+                        <ul class="list-disc list-inside text-sm space-y-1 pl-2">
+                            {% for achievement in job.achievements %}
+                            <li>{{ achievement }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endfor %}
+                </section>
+
+                <!-- Education -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Education</h2>
+                    {% for edu in section.extra.education %}
+                    <div class="mb-6{% if loop.last %} {% else %} {% endif %}">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold">{{ edu.degree }}</h3>
+                            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">{{ edu.period
+                                }}</span>
+                        </div>
+                        <p class="text-sm text-[var(--primary)] mb-2">{{ edu.school }}</p>
+                        <p class="text-sm">{{ edu.details }}</p>
+                    </div>
+                    {% endfor %}
+                </section>
+
+                <!-- Projects -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Projects</h2>
+                    {% for project in section.extra.projects %}
+                    <div class="mb-6{% if loop.last %} {% else %} {% endif %}">
+                        <h3 class="font-semibold mb-1">{{ project.name }}</h3>
+                        <p class="text-sm mb-2">{{ project.description }}</p>
+                        <div class="flex flex-wrap gap-2">
+                            {% for tech in project.technologies %}
+                            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">{{ tech
+                                }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-8">
+                <!-- Skills -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Skills</h2>
+                    {% for skill in section.extra.skills %}
+                    <div class="mb-4{% if loop.last %} {% endif %}">
+                        <h3 class="font-semibold text-sm mb-2">{{ skill.name }}</h3>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: {{ skill.level }}%"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </section>
+
+                <!-- Certifications -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Certifications</h2>
+                    {% for cert in section.extra.certifications %}
+                    <div class="mb-4{% if loop.last %} {% endif %}">
+                        <h3 class="font-semibold text-sm">{{ cert.name }}</h3>
+                        <p class="text-xs text-[var(--primary)]">{{ cert.issuer }} - {{ cert.year }}</p>
+                    </div>
+                    {% endfor %}
+                </section>
+
+                <!-- Languages -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Languages</h2>
+                    {% for lang in section.extra.languages %}
+                    <div class="mb-3{% if loop.last %} {% endif %}">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span>{{ lang.name }}</span>
+                            <span>{{ lang.level }}</span>
+                        </div>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: {{ lang.percentage }}%"></div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </section>
+
+                <!-- Awards -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Awards</h2>
+                    {% for award in section.extra.awards %}
+                    <div class="mb-3{% if loop.last %} {% endif %}">
+                        <h3 class="font-semibold text-sm">{{ award.name }}</h3>
+                        <p class="text-xs text-[var(--primary)]">{{ award.issuer }} - {{ award.year }}</p>
+                    </div>
+                    {% endfor %}
+                </section>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-8 text-center text-xs opacity-70">
+            <p>&copy; 2025 {{ section.title }}. All rights reserved.</p>
+        </footer>
+
+    </div>
+    <script src="{{ get_url(path='js/script.js') }}"></script>
+</body>
+
+</html>
