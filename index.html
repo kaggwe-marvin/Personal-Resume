@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaggwe Marvin Victor - Indie Hacker</title>
+    <meta name="description" content="Indie developer with 5+ years of experience in intergrating IT systems in business.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://example.com/css/style.css">
+</head>
+
+<body class="bg-[var(--background)] text-[var(--text)] transition-colors duration-300 font-sans">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div class="absolute top-20 left-10 w-40 h-40 rounded-full bg-[var(--primary)] opacity-10 floating"></div>
+        <div class="absolute bottom-10 right-20 w-60 h-60 rounded-full bg-[var(--secondary)] opacity-10 floating"
+            style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/3 right-1/4 w-32 h-32 rounded-full bg-[var(--primary)] opacity-10 floating"
+            style="animation-delay: 4s;"></div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- Theme Selector -->
+        <div class="flex justify-end gap-3 mb-6">
+            <div class="theme-selector w-6 h-6 rounded-full bg-blue-500" onclick="changeTheme('blue')"
+                title="Blue Theme"></div>
+            <div class="theme-selector w-6 h-6 rounded-full bg-purple-500" onclick="changeTheme('purple')"
+                title="Purple Theme"></div>
+            <div class="theme-selector w-6 h-6 rounded-full bg-amber-500" onclick="changeTheme('amber')"
+                title="Amber Theme"></div>
+            <button onclick="toggleDarkMode()" class="ml-4 px-3 py-1 rounded-md bg-[var(--primary)] text-white text-xs">
+                <i class="fas fa-moon"></i> Toggle Dark
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-6">
+            <div>
+                <h1 class="text-3xl font-bold mb-1">Kaggwe Marvin Victor</h1>
+                <h2 class="text-xl text-[var(--primary)] font-semibold mb-2">Indie Hacker</h2>
+                <p class="text-sm opacity-80 max-w-lg">Indie developer with 5+ years of experience in intergrating IT systems in business.</p>
+            </div>
+            <div class="flex flex-col items-end">
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-envelope mr-2 text-[var(--primary)]"></i>
+                    <span class="text-sm"><a href="mailto:kaggwemarvin@gmail.com">kaggwemarvin@gmail.com</a></span>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-phone mr-2 text-[var(--primary)]"></i>
+                    <span class="text-sm">+256788320104</span>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fas fa-map-marker-alt mr-2 text-[var(--primary)]"></i>
+                    <span class="text-sm">Kampala, UG</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-linkedin mr-2 text-[var(--primary)]"></i>
+                    <span class="text-sm"><a href="https://https:&#x2F;&#x2F;github.com&#x2F;kaggwe-marvin">https:&#x2F;&#x2F;github.com&#x2F;kaggwe-marvin</a></span>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Experience -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Work Experience</h2>
+                    
+                    <div class="mb-6 ">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold">Digital Business Manager</h3>
+                            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">2020 - Present</span>
+                        </div>
+                        <p class="text-sm text-[var(--primary)] mb-2">Floridah guest house, Kireka</p>
+                        <ul class="list-disc list-inside text-sm space-y-1 pl-2">
+                            
+                            <li>Managed digital presence across Google, TikTok, Instagram, and Airbnb</li>
+                            
+                            <li>Launched online campaigns to boost visibility and engagement</li>
+                            
+                            <li>Handled accounting and daily business operations</li>
+                            
+                            <li>Streamlined workflows to improve efficiency and service</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6 ">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold">Data Entrant</h3>
+                            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">2021 - 2025</span>
+                        </div>
+                        <p class="text-sm text-[var(--primary)] mb-2">Uganda National Examinations Board, Kyabongo</p>
+                        <ul class="list-disc list-inside text-sm space-y-1 pl-2">
+                            
+                            <li>Entered and verified high-volume examination data with accuracy</li>
+                            
+                            <li>Safeguarded sensitive academic records and ensured confidentiality</li>
+                            
+                            <li>Delivered results under strict deadlines in a fast-paced environment</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold">JCB backhoe Operator</h3>
+                            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">2024 - Parttime</span>
+                        </div>
+                        <p class="text-sm text-[var(--primary)] mb-2">Godfrey S.K Investments, Namanve</p>
+                        <ul class="list-disc list-inside text-sm space-y-1 pl-2">
+                            
+                            <li>Operated JCB backhoe for excavation and site work</li>
+                            
+                            <li>Assisted in construction and landscaping projects</li>
+                            
+                            <li>Performed basic equipment checks and maintenance</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </section>
+
+                <!-- Education -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Education</h2>
+                    
+                    <div class="mb-6 ">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-semibold">Bachelor of Business Computing</h3>
+                            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">2020 - 2026</span>
+                        </div>
+                        <p class="text-sm text-[var(--primary)] mb-2">MUBS</p>
+                        <p class="text-sm">Minor in Accounting. Graduated with honors.</p>
+                    </div>
+                    
+                </section>
+
+                <!-- Projects -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Projects</h2>
+                    
+                    <div class="mb-6 ">
+                        <h3 class="font-semibold mb-1">E-commerce Platform</h3>
+                        <p class="text-sm mb-2">A full-stack e-commerce solution with React, Node.js, and MongoDB</p>
+                        <div class="flex flex-wrap gap-2">
+                            
+                            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">React</span>
+                            
+                            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Node.js</span>
+                            
+                            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">MongoDB</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 ">
+                        <h3 class="font-semibold mb-1">Task Management App</h3>
+                        <p class="text-sm mb-2">A collaborative task management application with real-time updates</p>
+                        <div class="flex flex-wrap gap-2">
+                            
+                            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Vue.js</span>
+                            
+                            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Firebase</span>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6 ">
+                        <h3 class="font-semibold mb-1">AI Chatbot</h3>
+                        <p class="text-sm mb-2">Natural language processing chatbot for customer support</p>
+                        <div class="flex flex-wrap gap-2">
+                            
+                            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Python</span>
+                            
+                            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">TensorFlow</span>
+                            
+                            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">NLTK</span>
+                            
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-8">
+                <!-- Skills -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Skills</h2>
+                    
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-sm mb-2">JavaScript&#x2F;TypeScript</h3>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-sm mb-2">Rust</h3>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-sm mb-2">Node.js&#x2F;Express</h3>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-sm mb-2">Python</h3>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-sm mb-2">Book Keeping&#x2F;Accounting</h3>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4 ">
+                        <h3 class="font-semibold text-sm mb-2">Backhoe Operartions</h3>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <!-- Certifications -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Certifications</h2>
+                    
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-sm">AWS Certified Solutions Architect</h3>
+                        <p class="text-xs text-[var(--primary)]">Amazon Web Services - 2022</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="font-semibold text-sm">Google Professional Data Engineer</h3>
+                        <p class="text-xs text-[var(--primary)]">Google Cloud - 2021</p>
+                    </div>
+                    
+                    <div class="mb-4 ">
+                        <h3 class="font-semibold text-sm">Certified Kubernetes Administrator</h3>
+                        <p class="text-xs text-[var(--primary)]">Cloud Native Computing Foundation - 2020</p>
+                    </div>
+                    
+                </section>
+
+                <!-- Languages -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Languages</h2>
+                    
+                    <div class="mb-3">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span>English</span>
+                            <span>Professional </span>
+                        </div>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span>Luganda</span>
+                            <span>Native</span>
+                        </div>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 ">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span>Swahili</span>
+                            <span>Noob</span>
+                        </div>
+                        <div class="skill-bar bg-gray-200">
+                            <div class="progress bg-[var(--primary)]" style="width: 20%"></div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <!-- Awards -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+                    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Awards</h2>
+                    
+                    <div class="mb-3">
+                        <h3 class="font-semibold text-sm">Class G Driving Permit</h3>
+                        <p class="text-xs text-[var(--primary)]">Uganda Driver Licensing System - 2026</p>
+                    </div>
+                    
+                    <div class="mb-3 ">
+                        <h3 class="font-semibold text-sm">Best Hackathon Project</h3>
+                        <p class="text-xs text-[var(--primary)]">DevCon - 2019</p>
+                    </div>
+                    
+                </section>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-8 text-center text-xs opacity-70">
+            <p>&copy; 2025 Kaggwe Marvin Victor - Indie Hacker. All rights reserved.</p>
+        </footer>
+
+    </div>
+    <script src="https://example.com/js/script.js"></script>
+</body>
+
+</html>
