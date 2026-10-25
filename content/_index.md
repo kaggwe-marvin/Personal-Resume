@@ -4,12 +4,6 @@ description = "Full-stack developer in Kampala building web and desktop apps wit
 template = "index.html"
 
 [extra]
-name = "Kaggwe Marvin Victor"
-role = "Full-Stack Developer"
-location = "Kampala, Uganda"
-email = "kaggwemarvin@gmail.com"
-phone = "+256 788 320 104"
-github = "github.com/kaggwe-marvin"
 profile = "Full-stack developer who builds web and desktop apps with Python, Django and TypeScript. Final-year Business Computing student at Makerere University Business School (CGPA 3.95/5.0, graduating February 2027). Brings 4 years of IT support and data work, and has delivered a booking and mobile money payment system for a paying client."
 
 [[extra.experience]]
