@@ -1,130 +1,118 @@
 +++
-title = "Kaggwe Marvin Victor - Indie Hacker"
-description = "Indie developer with 5+ years of experience in intergrating IT systems in business."
+title = "Kaggwe Marvin Victor | Full-Stack Developer"
+description = "Full-stack developer in Kampala building web and desktop apps with Python, Django and TypeScript."
 template = "index.html"
 
 [extra]
 name = "Kaggwe Marvin Victor"
-title_role = "Indie Hacker"
-bio = "Indie developer with 5+ years of experience in intergrating IT systems in business."
+role = "Full-Stack Developer"
+location = "Kampala, Uganda"
 email = "kaggwemarvin@gmail.com"
-phone = "+256788320104"
-location = "Kampala, UG"
-linkedin = "https://github.com/kaggwe-marvin"
+phone = "+256 788 320 104"
+github = "github.com/kaggwe-marvin"
+profile = "Full-stack developer who builds web and desktop apps with Python, Django and TypeScript. Final-year Business Computing student at Makerere University Business School (CGPA 3.95/5.0, graduating February 2027). Brings 4 years of IT support and data work, and has delivered a booking and mobile money payment system for a paying client."
 
 [[extra.experience]]
-title = "Digital Business Manager"
-company = "Floridah guest house, Kireka"
-period = "2020 - Present"
-achievements = [
-    "Managed digital presence across Google, TikTok, Instagram, and Airbnb",
-    "Launched online campaigns to boost visibility and engagement",
-    "Handled accounting and daily business operations",
-    "Streamlined workflows to improve efficiency and service"
+title = "Freelance Software Developer"
+company = "Florida Guest House, Kireka (client project)"
+period = "2026"
+points = [
+    "Built a mobile-first booking web app for rooms and spa services using Bun, Hono, TypeScript and SQLite.",
+    "Added MTN MoMo and Airtel Money payment steps with OTP checks and booking receipts.",
+    "Gathered needs from the owner, then designed, built and handed over the system.",
 ]
 
 [[extra.experience]]
-title = "Data Entrant"
-company = "Uganda National Examinations Board, Kyabongo"
-period = "2021 - 2025"
-achievements = [
-    "Entered and verified high-volume examination data with accuracy",
-    "Safeguarded sensitive academic records and ensured confidentiality",
-    "Delivered results under strict deadlines in a fast-paced environment"
+title = "Sales and Technical Support Associate"
+company = "Della Electronics"
+period = "Jun 2024 – Present"
+points = [
+    "Diagnose hardware faults and install and configure Windows on hundreds of computers.",
+    "Advise customers on the right hardware and software, and close sales.",
+    "Set up devices and solve user problems quickly so customers leave with working systems.",
 ]
 
 [[extra.experience]]
-title = "JCB backhoe Operator"
-company = "Godfrey S.K Investments, Namanve"
-period = "2024 - Parttime"
-achievements = [
-    "Operated JCB backhoe for excavation and site work",
-    "Assisted in construction and landscaping projects",
-    "Performed basic equipment checks and maintenance"
+title = "Data Entry Operator (Seasonal)"
+company = "Uganda National Examinations Board (UNEB)"
+period = "2022 – 2025"
+points = [
+    "Entered and checked PLE, UCE and UACE examination data over four annual cycles.",
+    "Achieved 0% discrepancy on sign-off checks while working to strict national deadlines.",
+    "Kept sensitive candidate records fully confidential.",
 ]
+
+[[extra.experience]]
+title = "Records Clerk"
+company = "MMK Construction Ltd, Namanve"
+period = "2023"
+points = [
+    "Kept company records accurate, up to date and easy to find.",
+    "Handled confidential documents and met reporting deadlines.",
+]
+
+[[extra.projects]]
+name = "Voucher Manager"
+url = "https://github.com/kaggwe-marvin/Voucher-Manager"
+description = "Desktop app that creates MikroTik hotspot Wi-Fi vouchers in batches, downloads them over FTP and turns them into a printable PDF. Released as a Windows installer through a GitHub Actions pipeline."
+stack = ["Python", "Tkinter", "RouterOS API", "GitHub Actions"]
+
+[[extra.projects]]
+name = "Custom ERP"
+url = "https://github.com/kaggwe-marvin/custom-ERP"
+description = "Modular ERP with role-based access control, audit logging and a double-entry ledger that blocks unbalanced journal entries. Type-checked with mypy and tested with pytest in CI."
+stack = ["Django", "Django REST Framework", "mypy", "pytest"]
+
+[[extra.projects]]
+name = "Student Clearance System"
+url = "https://github.com/kaggwe-marvin/student-clearance-system"
+description = "Role-based clearance portal for students, department staff and admins, with document review, approval tracking and an audit trail."
+stack = ["TypeScript", "Hono", "Drizzle ORM", "HTMX"]
+
+[[extra.projects]]
+name = "Inventory Tracker"
+url = "https://github.com/kaggwe-marvin/Django-Inventory-tracker"
+description = "Stock tracker with low-stock alerts, CSV reports, a token-protected API and rate limiting. Tested with pytest in CI."
+stack = ["Django", "REST API", "pytest"]
+
+[[extra.projects]]
+name = "Florida Guest House Booking"
+url = "https://github.com/kaggwe-marvin/florida-booking"
+description = "Mobile-first room and spa booking app with MTN MoMo and Airtel Money payments, built for a paying client."
+stack = ["Bun", "Hono", "TypeScript", "SQLite"]
 
 [[extra.education]]
 degree = "Bachelor of Business Computing"
-school = "MUBS"
-period = "2020 - 2026"
-details = "Minor in Accounting. Graduated with honors."
+school = "Makerere University Business School (MUBS), Kampala"
+period = "2020 – Feb 2027"
+details = "Second Class Upper, CGPA 3.95/5.0."
+units = "Business Software Engineering (A), Information Systems Development and Management (A), Programming Principles for Business (A), Enterprise Network Administration (A), Computerised Investment Appraisal (A), Systems Analysis and Design, Corporate Database Management, E-Business and Web Design."
 
 [[extra.skills]]
-name = "JavaScript/TypeScript"
-level = 95
+group = "Languages"
+items = "Python, JavaScript, TypeScript, SQL, PHP, Bash"
 
 [[extra.skills]]
-name = "Rust"
-level = 40
+group = "Frameworks"
+items = "Django, Django REST Framework, Express.js, Hono, Next.js, Tailwind CSS"
 
 [[extra.skills]]
-name = "Node.js/Express"
-level = 85
+group = "Databases"
+items = "PostgreSQL, MySQL, SQLite, Oracle, MongoDB, Supabase"
 
 [[extra.skills]]
-name = "Python"
-level = 80
+group = "Tools"
+items = "Git, GitHub Actions (CI/CD), Docker, Poetry, pytest, mypy, Vercel, Render"
 
 [[extra.skills]]
-name = "Book Keeping/Accounting"
-level = 75
-
-[[extra.skills]]
-name = "Backhoe Operartions"
-level = 65
+group = "IT support"
+items = "Hardware repair, Windows installation and configuration, MikroTik RouterOS, Microsoft Office"
 
 [[extra.languages]]
 name = "English"
-level = "Professional "
-percentage = 100
+level = "Fluent"
 
 [[extra.languages]]
 name = "Luganda"
 level = "Native"
-percentage = 80
-
-[[extra.languages]]
-name = "Swahili"
-level = "Noob"
-percentage = 20
-
-[[extra.projects]]
-name = "E-commerce Platform"
-description = "A full-stack e-commerce solution with React, Node.js, and MongoDB"
-technologies = ["React", "Node.js", "MongoDB"]
-
-[[extra.projects]]
-name = "Task Management App"
-description = "A collaborative task management application with real-time updates"
-technologies = ["Vue.js", "Firebase"]
-
-[[extra.projects]]
-name = "AI Chatbot"
-description = "Natural language processing chatbot for customer support"
-technologies = ["Python", "TensorFlow", "NLTK"]
-
-[[extra.certifications]]
-name = "AWS Certified Solutions Architect"
-issuer = "Amazon Web Services"
-year = "2022"
-
-[[extra.certifications]]
-name = "Google Professional Data Engineer"
-issuer = "Google Cloud"
-year = "2021"
-
-[[extra.certifications]]
-name = "Certified Kubernetes Administrator"
-issuer = "Cloud Native Computing Foundation"
-year = "2020"
-
-[[extra.awards]]
-name = "Class G Driving Permit"
-issuer = "Uganda Driver Licensing System"
-year = "2026"
-
-[[extra.awards]]
-name = "Best Hackathon Project"
-issuer = "DevCon"
-year = "2019"
 +++
