@@ -13,13 +13,14 @@ github = "github.com/kaggwe-marvin"
 profile = "Full-stack developer who builds web and desktop apps with Python, Django and TypeScript. Final-year Business Computing student at Makerere University Business School (CGPA 3.95/5.0, graduating February 2027). Brings 4 years of IT support and data work, and has delivered a booking and mobile money payment system for a paying client."
 
 [[extra.experience]]
-title = "Freelance Software Developer"
-company = "Florida Guest House, Kireka (client project)"
-period = "2026"
+title = "Digital Business Manager"
+company = "Florida Guest House, Kireka"
+period = "2020 – Present"
 points = [
-    "Built a mobile-first booking web app for rooms and spa services using Bun, Hono, TypeScript and SQLite.",
+    "Built the guest house's mobile-first booking web app for rooms and spa services using Bun, Hono, TypeScript and SQLite.",
     "Added MTN MoMo and Airtel Money payment steps with OTP checks and booking receipts.",
-    "Gathered needs from the owner, then designed, built and handed over the system.",
+    "Manage the business's online presence on Google, TikTok, Instagram and Airbnb.",
+    "Handle bookkeeping and daily operations, and streamline workflows to improve service.",
 ]
 
 [[extra.experience]]
