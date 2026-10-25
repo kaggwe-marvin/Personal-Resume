@@ -11,6 +11,7 @@ intro = "Free tools I have built and released. Each download is the latest versi
 repo = "kaggwe-marvin/Voucher-Manager"
 name = "Voucher Manager"
 platform = "Windows 10 and 11"
+category = "UtilitiesApplication"
 description = "Batch-create MikroTik User Manager hotspot vouchers and print them as a PDF. Connects to your router, creates the accounts, downloads the vouchers and converts them to a printable file."
 note = "The app is not code-signed yet, so Windows may show \"Windows protected your PC\". Click More info, then Run anyway. You can check your download against the published checksums."
 +++

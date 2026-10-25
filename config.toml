@@ -1,11 +1,18 @@
 # The URL the site will be built for
 base_url = "https://kaggwe-marvin.github.io/Personal-Resume"
+title = "Kaggwe Marvin Victor"
+description = "Kaggwe Marvin Victor is a full-stack developer in Kampala, Uganda, building web and desktop apps with Python, Django and TypeScript."
+default_language = "en"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+
+# Feeds are switched on per section (the blog), not for the whole site
+generate_feeds = false
+feed_filenames = ["atom.xml"]
 
 [extra]
 name = "Kaggwe Marvin Victor"
@@ -14,3 +21,20 @@ location = "Kampala, Uganda"
 email = "kaggwemarvin@gmail.com"
 phone = "+256 788 320 104"
 github = "github.com/kaggwe-marvin"
+
+# Search and social
+og_image = "images/og.png"
+og_image_alt = "Kaggwe Marvin Victor, Full-Stack Developer, Kampala, Uganda"
+same_as = [
+    "https://github.com/kaggwe-marvin",
+    "https://kaggwe-marvin.github.io/kaggwe-marvin-resume/",
+]
+knows_about = [
+    "Python", "Django", "Django REST Framework", "TypeScript", "JavaScript", "SQL",
+    "PostgreSQL", "REST APIs", "GitHub Actions", "MikroTik RouterOS",
+    "ERP systems", "Double-entry accounting", "IT support", "Systems analysis and design",
+]
+
+# Paste the codes from Google Search Console and Bing Webmaster Tools here
+google_site_verification = ""
+bing_site_verification = ""

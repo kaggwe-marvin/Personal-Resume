@@ -1,8 +1,21 @@
 {% extends "base.html" %}
 
-{% block title %}{{ page.title }}{% endblock title %}
-{% block description %}{{ page.description }}{% endblock description %}
 {% block nav_downloads %}aria-current="page"{% endblock nav_downloads %}
+
+{% block jsonld %}{% for app in page.extra.apps %},
+            {
+                "@type": "SoftwareApplication",
+                "name": {{ app.name | json_encode() | safe }},
+                "description": {{ app.description | json_encode() | safe }},
+                "operatingSystem": {{ app.platform | json_encode() | safe }},
+                "applicationCategory": {{ app.category | default(value="UtilitiesApplication") | json_encode() | safe }},
+                "url": "{{ current_url }}",
+                "downloadUrl": "https://github.com/{{ app.repo }}/releases/latest",
+                "sameAs": "https://github.com/{{ app.repo }}",
+                "isAccessibleForFree": true,
+                "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+                "author": {"@id": "{{ config.base_url }}/#person"}
+            }{% endfor %}{% endblock jsonld %}
 
 {% block content %}
 <h1 class="visually-hidden">{{ config.extra.name }}: Downloads</h1>

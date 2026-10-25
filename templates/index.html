@@ -1,12 +1,20 @@
 {% extends "base.html" %}
 
-{% block title %}{{ section.title }}{% endblock title %}
-{% block description %}{{ section.description }}{% endblock description %}
 {% block nav_resume %}aria-current="page"{% endblock nav_resume %}
 
-{% block content %}
-<h1 class="visually-hidden">{{ config.extra.name }}: Resume</h1>
+{% block jsonld %},
+            {
+                "@type": "ProfilePage",
+                "@id": "{{ current_url }}#profile",
+                "url": "{{ current_url }}",
+                "name": {{ section.title | json_encode() | safe }},
+                "description": {{ section.description | json_encode() | safe }},
+                "isPartOf": {"@id": "{{ config.base_url }}/#website"},
+                "mainEntity": {"@id": "{{ config.base_url }}/#person"},
+                "dateModified": "{{ now() | date(format="%Y-%m-%d") }}"
+            }{% endblock jsonld %}
 
+{% block content %}
 <section>
     <h2>Profile</h2>
     <p>{{ section.extra.profile }}</p>

@@ -1,8 +1,15 @@
 {% extends "base.html" %}
 
-{% block title %}{{ page.title }}{% endblock title %}
-{% block description %}{{ page.description }}{% endblock description %}
 {% block nav_websites %}aria-current="page"{% endblock nav_websites %}
+
+{% block jsonld %},
+            {
+                "@type": "ItemList",
+                "name": "Websites built by {{ config.extra.name }}",
+                "itemListElement": [{% for site in page.extra.sites %}
+                    {"@type": "ListItem", "position": {{ loop.index }}, "item": {"@type": "WebSite", "name": {{ site.name | json_encode() | safe }}, "url": "{{ site.url }}", "description": {{ site.description | json_encode() | safe }}, "creator": {"@id": "{{ config.base_url }}/#person"}}}{% if not loop.last %},{% endif %}{% endfor %}
+                ]
+            }{% endblock jsonld %}
 
 {% block content %}
 <h1 class="visually-hidden">{{ config.extra.name }}: Websites</h1>

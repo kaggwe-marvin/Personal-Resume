@@ -22,6 +22,13 @@ stack = ["HTML", "CSS", "GitHub Pages"]
 source = "https://github.com/kaggwe-marvin/penzi"
 
 [[extra.sites]]
+name = "Kaggwe Marvin: Notes"
+url = "https://kaggwe-marvin.github.io/kaggwe-marvin-resume"
+description = "My first personal site, now a blog-first site with my notes, tutorials and projects. Rebuilt from Hugo to Zola with its own design."
+stack = ["Zola", "HTML", "CSS", "GitHub Actions"]
+source = "https://github.com/kaggwe-marvin/kaggwe-marvin-resume"
+
+[[extra.sites]]
 name = "This resume site"
 url = "https://kaggwe-marvin.github.io/Personal-Resume"
 description = "My resume, blog and software downloads. The Downloads tab reads the latest releases live from GitHub."
