@@ -107,11 +107,11 @@
 
         <nav class="tabs" aria-label="Site">
             <a href="{{ get_url(path='/') }}" {% block nav_resume %}{% endblock nav_resume %}>Resume</a>
+            <a href="{{ get_url(path='/hire/') }}" {% block nav_hire %}{% endblock nav_hire %}>Hire me</a>
             <a href="{{ get_url(path='/blog/') }}" {% block nav_blog %}{% endblock nav_blog %}>Blog</a>
             <a href="{{ get_url(path='/results/') }}" {% block nav_results %}{% endblock nav_results %}>Results</a>
             <a href="{{ get_url(path='/websites/') }}" {% block nav_websites %}{% endblock nav_websites %}>Websites</a>
             <a href="{{ get_url(path='/downloads/') }}" {% block nav_downloads %}{% endblock nav_downloads %}>Downloads</a>
-            <a href="{{ get_url(path='/hire/') }}" {% block nav_hire %}{% endblock nav_hire %}>Hire me</a>
         </nav>
 
         {% block content %}{% endblock content %}
