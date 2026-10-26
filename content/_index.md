@@ -1,10 +1,10 @@
 +++
-title = "Kaggwe Marvin Victor | Full-Stack Developer"
-description = "Full-stack developer in Kampala building web and desktop apps with Python, Django and TypeScript."
+title = "Kaggwe Marvin Victor | Freelance Full-Stack Developer, Kampala"
+description = "Freelance full-stack developer in Kampala, Uganda. I build websites, booking and mobile money payment systems, and business apps with Python, Django and TypeScript."
 template = "index.html"
 
 [extra]
-profile = "Full-stack developer who builds web and desktop apps with Python, Django and TypeScript. Final-year Business Computing student at Makerere University Business School (CGPA 3.95/5.0, graduating February 2027). Brings 4 years of IT support and data work, and has delivered a booking and mobile money payment system for a paying client."
+profile = "Full-stack developer who builds web and desktop apps with Python, Django and TypeScript. Final-year Business Computing student at Makerere University Business School (CGPA 3.95/5.0, graduating February 2027). Brings 4 years of IT support and data work, and has delivered a booking and mobile money payment system for a paying client. Available for freelance projects."
 
 [[extra.experience]]
 title = "Digital Business Manager"

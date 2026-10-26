@@ -12,6 +12,7 @@
 - Past work: Data Entry Operator (seasonal) at the Uganda National Examinations Board (2022 to 2025); Records Clerk at MMK Construction Ltd, Namanve (2023)
 - Main skills: Python, Django, Django REST Framework, TypeScript, JavaScript, SQL, PostgreSQL, GitHub Actions, MikroTik RouterOS, IT support
 - Open to: junior developer, business systems and IT roles, in Kampala or remote
+- Freelance: available for freelance projects (websites, booking and mobile money payments, Django business systems, MikroTik hotspots, IT support). Details: https://resume.kaggwemarvinvictor.me/hire/
 - Contact: kaggwemarvin@gmail.com
 - GitHub: https://github.com/kaggwe-marvin
 
@@ -19,6 +20,7 @@
 
 - [Resume](https://resume.kaggwemarvinvictor.me/): work experience, projects, education and skills
 - [Blog](https://resume.kaggwemarvinvictor.me/blog/): posts about the software he builds
+- [Hire me](https://resume.kaggwemarvinvictor.me/hire/): freelance services in Kampala, Uganda, with examples of real work
 - [Results](https://resume.kaggwemarvinvictor.me/results/): full academic results, every course unit with mark and grade, CGPA 3.95/5.0
 - [Websites](https://resume.kaggwemarvinvictor.me/websites/): live websites he has built
 - [Downloads](https://resume.kaggwemarvinvictor.me/downloads/): free software releases

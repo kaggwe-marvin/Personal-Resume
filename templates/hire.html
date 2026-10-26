@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block nav_hire %}aria-current="page"{% endblock nav_hire %}
+
+{% block jsonld %},
+            {
+                "@type": "ProfessionalService",
+                "@id": "{{ current_url }}#service",
+                "name": "{{ config.extra.name }}, freelance web developer",
+                "url": "{{ current_url }}",
+                "description": {{ page.description | json_encode() | safe }},
+                "image": "{{ get_url(path=config.extra.og_image) }}",
+                "email": "{{ config.extra.email }}",
+                "telephone": {{ config.extra.phone | replace(from=" ", to="") | json_encode() | safe }},
+                "address": {"@type": "PostalAddress", "addressLocality": "Kampala", "addressCountry": "UG"},
+                "areaServed": [{"@type": "City", "name": "Kampala"}, {"@type": "Country", "name": "Uganda"}],
+                "founder": {"@id": "{{ config.base_url }}/#person"},
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Services",
+                    "itemListElement": [{% for s in page.extra.services %}
+                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": {{ s.name | json_encode() | safe }}, "description": {{ s.description | json_encode() | safe }}}}{% if not loop.last %},{% endif %}{% endfor %}
+                    ]
+                }
+            }{% endblock jsonld %}
+
+{% block content %}
+<h1 class="visually-hidden">{{ page.title }}</h1>
+
+<section>
+    <h2>Freelance web developer in Kampala</h2>
+    <p>{{ page.extra.intro }}</p>
+    <p class="release-files">
+        <a class="button" href="mailto:{{ config.extra.email }}?subject=Project%20enquiry">Email me about your project</a>
+        <a class="button secondary" href="tel:{{ config.extra.phone | replace(from=' ', to='') }}">Call {{ config.extra.phone }}</a>
+    </p>
+</section>
+
+<section>
+    <h2>What I can build for you</h2>
+    <div class="projects">
+        {% for s in page.extra.services %}
+        <article class="project">
+            <h3>{{ s.name }}</h3>
+            <p>{{ s.description }}</p>
+            <p class="source">Example: <a href="{{ s.proof_url }}">{{ s.proof }}</a></p>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section>
+    <h2>How it works</h2>
+    <ol class="steps">
+        {% for step in page.extra.steps %}
+        <li><strong>{{ step.name }}.</strong> {{ step.text }}</li>
+        {% endfor %}
+    </ol>
+</section>
+
+<section>
+    <h2>Questions</h2>
+    {% for item in page.extra.faq %}
+    <article class="entry">
+        <h3>{{ item.q }}</h3>
+        <p>{{ item.a }}{% if item.link %} <a href="{{ get_url(path=item.link) }}">Read the guide</a>.{% endif %}</p>
+    </article>
+    {% endfor %}
+</section>
+
+<section>
+    <h2>Get in touch</h2>
+    <p>Email <a href="mailto:{{ config.extra.email }}?subject=Project%20enquiry">{{ config.extra.email }}</a> or call <a href="tel:{{ config.extra.phone | replace(from=' ', to='') }}">{{ config.extra.phone }}</a>. You can also see my <a href="{{ get_url(path='/') }}">full resume</a> and the <a href="{{ get_url(path='/websites/') }}">websites I have built</a>.</p>
+</section>
+{% endblock content %}

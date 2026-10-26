@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://resume.kaggwemarvinvictor.me"
 title = "Kaggwe Marvin Victor"
-description = "Kaggwe Marvin Victor is a full-stack developer in Kampala, Uganda, building web and desktop apps with Python, Django and TypeScript."
+description = "Kaggwe Marvin Victor is a full-stack developer in Kampala, Uganda, available for freelance work. He builds websites, web apps and desktop apps with Python, Django and TypeScript."
 default_language = "en"
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -32,7 +32,7 @@ same_as = [
 knows_about = [
     "Python", "Django", "Django REST Framework", "TypeScript", "JavaScript", "SQL",
     "PostgreSQL", "REST APIs", "GitHub Actions", "MikroTik RouterOS",
-    "ERP systems", "Double-entry accounting", "IT support", "Systems analysis and design",
+    "ERP systems", "Web development", "Mobile money payments (MTN MoMo, Airtel Money)", "Double-entry accounting", "IT support", "Systems analysis and design",
 ]
 
 # Paste the codes from Google Search Console and Bing Webmaster Tools here
