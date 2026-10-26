@@ -64,7 +64,7 @@
             <span class="period">{{ edu.period }}</span>
         </div>
         <p class="where">{{ edu.school }}</p>
-        <p>{{ edu.details }}</p>
+        <p>{{ edu.details }} <a href="{{ get_url(path='/results/') }}">See all my results</a>.</p>
         <p class="units"><strong>Relevant course units:</strong> {{ edu.units }}</p>
     </article>
     {% endfor %}

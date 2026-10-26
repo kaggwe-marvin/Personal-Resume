@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block nav_results %}aria-current="page"{% endblock nav_results %}
+
+{% block jsonld %},
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": {{ page.extra.programme | json_encode() | safe }},
+                "credentialCategory": "degree",
+                "educationalLevel": "Bachelor's degree",
+                "recognizedBy": {"@type": "CollegeOrUniversity", "name": "Makerere University Business School"},
+                "description": {{ page.description | json_encode() | safe }},
+                "about": {"@id": "{{ config.base_url }}/#person"}
+            }{% endblock jsonld %}
+
+{% block content %}
+<h1 class="visually-hidden">{{ config.extra.name }}: Academic results</h1>
+
+<section>
+    <h2>Academic results</h2>
+    <div class="entry-head">
+        <h3>{{ page.extra.programme }}</h3>
+        <span class="period">CGPA {{ page.extra.cgpa }} / {{ page.extra.scale }}</span>
+    </div>
+    <p class="where">{{ page.extra.school }}</p>
+    <p>{{ page.extra.class }}. {{ page.extra.status }}.</p>
+    <p class="note">{{ page.extra.intro }}</p>
+</section>
+
+{% for sem in page.extra.semesters %}
+<section class="semester">
+    <h2>{{ sem.name }} · {{ sem.year }}</h2>
+    <div class="table-wrap">
+        <table class="results">
+            <thead>
+                <tr>
+                    <th scope="col">Code</th>
+                    <th scope="col">Course unit</th>
+                    <th scope="col" class="num">Mark</th>
+                    <th scope="col" class="num">CUs</th>
+                    <th scope="col" class="num">Grade</th>
+                    <th scope="col" class="num">Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for unit in sem.units %}
+                <tr>
+                    <td class="code">{{ unit.code }}</td>
+                    <td>{{ unit.title }}</td>
+                    <td class="num">{{ unit.mark }}</td>
+                    <td class="num">{{ unit.cu }}</td>
+                    <td class="num">{{ unit.grade }}</td>
+                    <td class="num">{{ unit.point }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">GPA <strong>{{ sem.gpa }}</strong> · CGPA <strong>{{ sem.cgpa }}</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</section>
+{% endfor %}
+{% endblock content %}

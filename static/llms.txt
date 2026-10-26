@@ -19,11 +19,13 @@
 
 - [Resume](https://kaggwe-marvin.github.io/Personal-Resume/): work experience, projects, education and skills
 - [Blog](https://kaggwe-marvin.github.io/Personal-Resume/blog/): posts about the software he builds
+- [Results](https://kaggwe-marvin.github.io/Personal-Resume/results/): full academic results, every course unit with mark and grade, CGPA 3.95/5.0
 - [Websites](https://kaggwe-marvin.github.io/Personal-Resume/websites/): live websites he has built
 - [Downloads](https://kaggwe-marvin.github.io/Personal-Resume/downloads/): free software releases
 
 ## Blog posts
 
+- [Why I'm drawn to neobrutalism, and how I toned it down](https://kaggwe-marvin.github.io/Personal-Resume/blog/why-neobrutalism/): why neobrutalist web design appeals to him as a developer, and the contrast rules he set for it
 - [Why I built Voucher Manager: printing hotspot vouchers on RouterOS 7](https://kaggwe-marvin.github.io/Personal-Resume/blog/voucher-manager-routeros-7/): the five manual steps RouterOS 7 User Manager needs to make printable vouchers, and how Voucher Manager automates them
 - [Run Linux on Windows 10 or Tiny10 with MSYS2 and QEMU](https://kaggwe-marvin.github.io/Personal-Resume/blog/msys2-qemu-linux-setup/): step-by-step guide to an Ubuntu Server VM on Windows without WSL
 - [How I built my first site: from Hugo to Zola](https://kaggwe-marvin.github.io/Personal-Resume/blog/how-i-built-this-site/): lessons from building and rebuilding a personal site
