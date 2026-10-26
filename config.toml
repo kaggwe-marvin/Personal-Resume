@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://kaggwe-marvin.github.io/Personal-Resume"
+base_url = "https://resume.kaggwemarvinvictor.me"
 title = "Kaggwe Marvin Victor"
 description = "Kaggwe Marvin Victor is a full-stack developer in Kampala, Uganda, building web and desktop apps with Python, Django and TypeScript."
 default_language = "en"

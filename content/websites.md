@@ -30,7 +30,7 @@ source = "https://github.com/kaggwe-marvin/kaggwe-marvin-resume"
 
 [[extra.sites]]
 name = "This resume site"
-url = "https://kaggwe-marvin.github.io/Personal-Resume"
+url = "https://resume.kaggwemarvinvictor.me"
 description = "My resume, blog and software downloads. The Downloads tab reads the latest releases live from GitHub."
 stack = ["Zola", "HTML", "CSS", "GitHub Actions"]
 source = "https://github.com/kaggwe-marvin/Personal-Resume"
