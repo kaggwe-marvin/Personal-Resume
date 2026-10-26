@@ -41,5 +41,5 @@
 ## Websites
 
 - [FoundUG](https://foundug.vercel.app): lost and found documents platform for Uganda
-- [Penzi's Cocktail Bar](https://kaggwe-marvin.github.io/penzi): cocktail bar website
+- [Penzi's Cocktail Bar](https://resume.kaggwemarvinvictor.me/penzi): cocktail bar website
 - [Kaggwe Marvin: Notes](https://kaggwemarvinvictor.me): his blog-first personal site

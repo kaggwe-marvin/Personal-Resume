@@ -7,6 +7,12 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      # Penzi lives in its own repo; copy its latest version in so it is served at /penzi
+      - name: Add Penzi
+        run: |
+          git clone --depth 1 https://github.com/kaggwe-marvin/penzi /tmp/penzi
+          rm -rf /tmp/penzi/.git /tmp/penzi/README.md
+          cp -r /tmp/penzi static/penzi
       - name: build_and_deploy
         uses: shalzz/zola-deploy-action@master
         env:
