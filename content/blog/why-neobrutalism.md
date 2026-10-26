@@ -7,7 +7,7 @@ template = "post.html"
 
 Most websites today look the same. Soft gradients, rounded corners, blurry shadows and buttons that fade in slowly. It looks polished, but it is hard to tell one site from another.
 
-Neobrutalism goes the other way. Flat colours, thick black borders, sharp corners and shadows with no blur. Nothing is hidden, and nothing pretends to be glass. When I rebuilt my notes site, [kaggwe-marvin-resume](https://kaggwe-marvin.github.io/kaggwe-marvin-resume/), I chose it on purpose. Here is why. (This resume site stays plain on purpose: a CV should be quiet and easy to scan.)
+Neobrutalism goes the other way. Flat colours, thick black borders, sharp corners and shadows with no blur. Nothing is hidden, and nothing pretends to be glass. When I rebuilt my notes site, [kaggwemarvinvictor.me](https://kaggwemarvinvictor.me/), I chose it on purpose. Here is why. (This resume site stays plain on purpose: a CV should be quiet and easy to scan.)
 
 ## It shows the structure
 

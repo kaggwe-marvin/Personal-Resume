@@ -27,7 +27,7 @@ og_image = "images/og.png"
 og_image_alt = "Kaggwe Marvin Victor, Full-Stack Developer, Kampala, Uganda"
 same_as = [
     "https://github.com/kaggwe-marvin",
-    "https://kaggwe-marvin.github.io/kaggwe-marvin-resume/",
+    "https://kaggwemarvinvictor.me/",
 ]
 knows_about = [
     "Python", "Django", "Django REST Framework", "TypeScript", "JavaScript", "SQL",

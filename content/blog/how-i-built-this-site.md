@@ -6,7 +6,7 @@ updated = 2026-10-25
 template = "post.html"
 +++
 
-> **Update, October 2026:** my first site, [kaggwe-marvin-resume](https://kaggwe-marvin.github.io/kaggwe-marvin-resume/), no longer runs on Hugo. I rebuilt it with [Zola](https://www.getzola.org/) and my own small template, the same one this site uses. The second half of this post explains why.
+> **Update, October 2026:** my first site, [kaggwemarvinvictor.me](https://kaggwemarvinvictor.me/), no longer runs on Hugo. I rebuilt it with [Zola](https://www.getzola.org/) and my own small template, the same one this site uses. The second half of this post explains why.
 
 Building a personal site had been on my to-do list for ages. Working on the Ordin project finally pushed me to do it, because I needed a place to document my progress and show my work.
 
