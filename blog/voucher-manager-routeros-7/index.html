@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I built Voucher Manager: printing hotspot vouchers on RouterOS 7 | Kaggwe Marvin Victor</title>
+    <meta name="description" content="MikroTik&#39;s User Manager in RouterOS 7 can make vouchers, but it takes five separate steps. Here is what those steps are and how I turned them into one button.">
+    <meta name="author" content="Kaggwe Marvin Victor">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://resume.kaggwemarvinvictor.me/blog/voucher-manager-routeros-7/">
+
+    <meta property="og:site_name" content="Kaggwe Marvin Victor">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Why I built Voucher Manager: printing hotspot vouchers on RouterOS 7 | Kaggwe Marvin Victor">
+    <meta property="og:description" content="MikroTik&#39;s User Manager in RouterOS 7 can make vouchers, but it takes five separate steps. Here is what those steps are and how I turned them into one button.">
+    <meta property="og:url" content="https://resume.kaggwemarvinvictor.me/blog/voucher-manager-routeros-7/">
+    <meta property="og:image" content="https://resume.kaggwemarvinvictor.me/images/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Kaggwe Marvin Victor, Full-Stack Developer, Kampala, Uganda">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why I built Voucher Manager: printing hotspot vouchers on RouterOS 7 | Kaggwe Marvin Victor">
+    <meta name="twitter:description" content="MikroTik&#39;s User Manager in RouterOS 7 can make vouchers, but it takes five separate steps. Here is what those steps are and how I turned them into one button.">
+    <meta name="twitter:image" content="https://resume.kaggwemarvinvictor.me/images/og.png">
+    
+
+    <link rel="icon" href="https://resume.kaggwemarvinvictor.me/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://resume.kaggwemarvinvictor.me/images/apple-touch-icon.png">
+    <meta name="theme-color" content="#1d4ed8">
+    <link rel="alternate" type="application/atom+xml" title="Kaggwe Marvin Victor: Blog" href="https://resume.kaggwemarvinvictor.me/blog/atom.xml">
+    <link rel="stylesheet" href="https://resume.kaggwemarvinvictor.me/css/style.css?h=9553d188f5f019cc3cac">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://resume.kaggwemarvinvictor.me/#person",
+                "name": "Kaggwe Marvin Victor",
+                "alternateName": ["Kaggwe Marvin","Marvin Kaggwe","Marvin Victor Kaggwe","Kaggwe Victor"],
+                "jobTitle": "Full-Stack Developer",
+                "url": "https://resume.kaggwemarvinvictor.me/",
+                "image": "https://resume.kaggwemarvinvictor.me/images/og.png",
+                "email": "mailto:kaggwemarvin@gmail.com",
+                "address": {"@type": "PostalAddress", "addressLocality": "Kampala", "addressCountry": "UG"},
+                "alumniOf": {"@type": "CollegeOrUniversity", "name": "Makerere University Business School"},
+                "knowsAbout": ["Python","Django","Django REST Framework","TypeScript","JavaScript","SQL","PostgreSQL","REST APIs","GitHub Actions","MikroTik RouterOS","ERP systems","Web development","Mobile money payments (MTN MoMo, Airtel Money)","Double-entry accounting","IT support","Systems analysis and design"],
+                "sameAs": ["https://github.com/kaggwe-marvin","https://kaggwemarvinvictor.me/"]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://resume.kaggwemarvinvictor.me/#website",
+                "url": "https://resume.kaggwemarvinvictor.me/",
+                "name": "Kaggwe Marvin Victor",
+                "description": "Kaggwe Marvin Victor is a full-stack developer in Kampala, Uganda, available for freelance work. He builds websites, web apps and desktop apps with Python, Django and TypeScript.",
+                "inLanguage": "en",
+                "publisher": {"@id": "https://resume.kaggwemarvinvictor.me/#person"}
+            },
+            {
+                "@type": "BlogPosting",
+                "@id": "https://resume.kaggwemarvinvictor.me/blog/voucher-manager-routeros-7/#post",
+                "headline": "Why I built Voucher Manager: printing hotspot vouchers on RouterOS 7",
+                "description": "MikroTik's User Manager in RouterOS 7 can make vouchers, but it takes five separate steps. Here is what those steps are and how I turned them into one button.",
+                "url": "https://resume.kaggwemarvinvictor.me/blog/voucher-manager-routeros-7/",
+                "mainEntityOfPage": "https://resume.kaggwemarvinvictor.me/blog/voucher-manager-routeros-7/",
+                "datePublished": "2026-10-25",
+                "dateModified": "",
+                "author": {"@id": "https://resume.kaggwemarvinvictor.me/#person"},
+                "publisher": {"@id": "https://resume.kaggwemarvinvictor.me/#person"},
+                "image": "https://resume.kaggwemarvinvictor.me/images/og.png",
+                "wordCount": 812,
+                "inLanguage": "en"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://resume.kaggwemarvinvictor.me/"},
+                    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://resume.kaggwemarvinvictor.me/blog"},
+                    {"@type": "ListItem", "position": 3, "name": "Why I built Voucher Manager: printing hotspot vouchers on RouterOS 7", "item": "https://resume.kaggwemarvinvictor.me/blog/voucher-manager-routeros-7/"}
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <main class="page">
+        <header class="header">
+            <div>
+                <p class="name">Kaggwe Marvin Victor</p>
+                <p class="role">Full-Stack Developer</p>
+            </div>
+            <ul class="contact">
+                <li>Kampala, Uganda</li>
+                <li><a href="mailto:kaggwemarvin@gmail.com">kaggwemarvin@gmail.com</a></li>
+                <li><a href="tel:+256788320104">+256 788 320 104</a></li>
+                <li><a href="https://github.com/kaggwe-marvin" rel="me">github.com/kaggwe-marvin</a></li>
+            </ul>
+        </header>
+
+        <nav class="tabs" aria-label="Site">
+            <a href="https://resume.kaggwemarvinvictor.me" >Resume</a>
+            <a href="https://resume.kaggwemarvinvictor.me/hire" >Hire me</a>
+            <a href="https://resume.kaggwemarvinvictor.me/blog" aria-current="page">Blog</a>
+            <a href="https://resume.kaggwemarvinvictor.me/results" >Results</a>
+            <a href="https://resume.kaggwemarvinvictor.me/websites" >Websites</a>
+            <a href="https://resume.kaggwemarvinvictor.me/downloads" >Downloads</a>
+        </nav>
+
+        
+<article class="post">
+    <p class="back"><a href="https://resume.kaggwemarvinvictor.me/blog">&larr; All posts</a></p>
+    <h1>Why I built Voucher Manager: printing hotspot vouchers on RouterOS 7</h1>
+    <p class="period"><time datetime="2026-10-25">25 October 2026</time> · 4 min read</p>
+    <p>If you run a Wi-Fi hotspot on a MikroTik router, you sell access with vouchers: small printed cards with a username and password. A customer pays, gets a card, and logs in.</p>
+<p>On RouterOS 7 this should be a five-minute job. In practice it is not. That is why I built <a rel="external" href="https://github.com/kaggwe-marvin/Voucher-Manager">Voucher Manager</a>, a small Windows app that does the whole job in one click.</p>
+<h2 id="what-changed-in-routeros-7">What changed in RouterOS 7</h2>
+<p>In RouterOS 7, MikroTik rebuilt User Manager from scratch. It uses a new database, new menus and new commands, and old setups have to be migrated across (<a rel="external" href="https://help.mikrotik.com/docs/spaces/ROS/pages/2555940/User+Manager">MikroTik docs</a>).</p>
+<p>The new web page at <code>/um/</code> is for customers. They can check their usage and buy a plan. It is not a tool for an operator who wants to print 50 vouchers before the evening rush. For that, you go back to the command line.</p>
+<h2 id="the-five-steps-routeros-7-makes-you-do">The five steps RouterOS 7 makes you do</h2>
+<p>To get one sheet of printable vouchers, you have to do all of this:</p>
+<ol>
+<li>
+<p><strong>Create the users.</strong> One <code>/user-manager user add</code> per user, with a name, password and group. There is also an <code>add-batch-users</code> command that makes random users in bulk, but it does not do the next steps for you.</p>
+</li>
+<li>
+<p><strong>Give every user a plan.</strong> A user is linked to a profile (for example "1 day" or "1 week") with a separate command, once per user:</p>
+<pre><code>/user-manager user-profile add user=abc123 profile=1-day
+</code></pre>
+</li>
+<li>
+<p><strong>Generate the vouchers.</strong> Run <code>generate-voucher</code> on exactly the users you just made, and name a voucher template that you have already uploaded to the router's Files:</p>
+<pre><code>/user-manager user generate-voucher numbers=*1,*2,*3 voucher-template=printable_vouchers.html
+</code></pre>
+</li>
+<li>
+<p><strong>Find the output.</strong> The router writes an HTML file to <code>um5files/PRIVATE/GENERATED/vouchers/gen_printable_vouchers.html</code>. To open it in a browser, you first need to set a private web username and password in User Manager's advanced settings. Otherwise you copy it off the router another way, such as FTP.</p>
+</li>
+<li>
+<p><strong>Print it.</strong> Open the HTML file and print it, or save it as a PDF.</p>
+</li>
+</ol>
+<p>None of these steps is hard alone. Together, done by hand for every batch, they are slow and easy to get wrong.</p>
+<h2 id="where-it-goes-wrong">Where it goes wrong</h2>
+<ul>
+<li><strong>Forgetting a profile.</strong> A user with no profile attached has no plan, so the card you hand over may not work as sold.</li>
+<li><strong>Generating for the wrong users.</strong> <code>generate-voucher</code> needs the internal IDs of the right users. Pick the wrong ones and you print old cards again, or miss new ones.</li>
+<li><strong>The file is not ready yet.</strong> Right after <code>generate-voucher</code> returns, the HTML file may still be being written. Try to download it too early and you get an error.</li>
+<li><strong>Typing plan names by hand.</strong> One typo in a profile name and the command fails halfway, leaving some users created and others not.</li>
+</ul>
+<h2 id="what-voucher-manager-does-instead">What Voucher Manager does instead</h2>
+<p>Voucher Manager talks to the router through its API (port 8728, or 8729 with TLS) and runs every step in order:</p>
+<ol>
+<li><strong>Test Connection</strong> checks your login before anything runs.</li>
+<li><strong>Refresh</strong> loads your user groups and profiles straight from the router, so you pick them from a list instead of typing them.</li>
+<li>It creates each user, attaches the profile you chose, and keeps the ID the router returns.</li>
+<li>It runs <code>generate-voucher</code> on exactly those IDs, using your template.</li>
+<li>It downloads the HTML file over FTP, and retries a few times if the file is not ready yet.</li>
+<li>It turns the file into a PDF with Microsoft Edge or Chrome, ready to print.</li>
+</ol>
+<p>If something fails halfway, it still saves a list of the users it already created next to your PDF. Nothing is left on the router without a record.</p>
+<p>You can make up to 500 vouchers per batch, with an optional username prefix so you can tell batches apart.</p>
+<h2 id="what-i-learned">What I learned</h2>
+<ul>
+<li><strong>Read the API, not just the menus.</strong> The RouterOS API returns the ID of every user you create. Keeping those IDs is what makes "generate vouchers for exactly this batch" reliable.</li>
+<li><strong>Plan for slow hardware.</strong> Routers are small computers. Waiting and retrying is part of the design, not a bug fix.</li>
+<li><strong>Ship it properly.</strong> I set up a GitHub Actions pipeline that builds a Windows installer and a portable <code>.exe</code>, with SHA256 checksums, every time I tag a release. People who are not developers can install it like any other app.</li>
+</ul>
+<h2 id="try-it">Try it</h2>
+<p>Voucher Manager is free and open source. It needs Windows 10 or 11, and your router needs the API and FTP services turned on, a voucher template in Files, and at least one profile and user group.</p>
+<ul>
+<li><a href="https://resume.kaggwemarvinvictor.me/downloads/">Download the latest version</a></li>
+<li><a rel="external" href="https://github.com/kaggwe-marvin/Voucher-Manager">Source code on GitHub</a></li>
+</ul>
+<p>If you run a MikroTik hotspot and try it, I would like to hear how it goes.</p>
+
+</article>
+
+
+        <footer class="footer">
+            <p>&copy; 2026 Kaggwe Marvin Victor · <a href="https://resume.kaggwemarvinvictor.me/blog/atom.xml">RSS feed</a></p>
+        </footer>
+    </main>
+    
+</body>
+
+</html>

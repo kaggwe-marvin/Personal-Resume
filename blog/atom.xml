@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Kaggwe Marvin Victor - Blog</title>
+    <subtitle>Kaggwe Marvin Victor is a full-stack developer in Kampala, Uganda, available for freelance work. He builds websites, web apps and desktop apps with Python, Django and TypeScript.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://resume.kaggwemarvinvictor.me/blog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://resume.kaggwemarvinvictor.me/blog/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-10-26T00:00:00+00:00</updated>
+    <id>https://resume.kaggwemarvinvictor.me/blog/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Why I&#39;m drawn to neobrutalism, and how I toned it down</title>
+        <published>2026-10-26T00:00:00+00:00</published>
+        <updated>2026-10-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://resume.kaggwemarvinvictor.me/blog/why-neobrutalism/"/>
+        <id>https://resume.kaggwemarvinvictor.me/blog/why-neobrutalism/</id>
+        
+        <content type="html" xml:base="https://resume.kaggwemarvinvictor.me/blog/why-neobrutalism/">&lt;p&gt;Most websites today look the same. Soft gradients, rounded corners, blurry shadows and buttons that fade in slowly. It looks polished, but it is hard to tell one site from another.&lt;/p&gt;
+&lt;p&gt;Neobrutalism goes the other way. Flat colours, thick black borders, sharp corners and shadows with no blur. Nothing is hidden, and nothing pretends to be glass. When I rebuilt my notes site, &lt;a rel=&quot;external&quot; href=&quot;https://kaggwemarvinvictor.me/&quot;&gt;kaggwemarvinvictor.me&lt;/a&gt;, I chose it on purpose. Here is why. (This resume site stays plain on purpose: a CV should be quiet and easy to scan.)&lt;/p&gt;
+&lt;h2 id=&quot;it-shows-the-structure&quot;&gt;It shows the structure&lt;/h2&gt;
+&lt;p&gt;Brutalism started in architecture. Brutalist buildings leave the raw concrete showing instead of hiding it behind paint. Neobrutalism does the same for the web: every box has a visible border, so you can see how the page is built.&lt;/p&gt;
+&lt;p&gt;As a developer I like that. Every element is a box anyway. This style stops hiding it.&lt;/p&gt;
+&lt;h2 id=&quot;it-is-honest-about-what-you-can-click&quot;&gt;It is honest about what you can click&lt;/h2&gt;
+&lt;p&gt;A button here looks like a button. It sits on a hard shadow, and when you press it, it sinks into that shadow like a real key. Hover over it and it turns amber at once, with no slow fade.&lt;/p&gt;
+&lt;p&gt;That instant change is on purpose. A 300 ms fade feels smooth, but it also makes the page feel slow. A snap feels like a switch. You know right away that the site heard you.&lt;/p&gt;
+&lt;h2 id=&quot;it-is-cheap-to-load&quot;&gt;It is cheap to load&lt;/h2&gt;
+&lt;p&gt;Flat colours and solid borders are simple CSS. No background images, no heavy blur effects, no animation library. The whole stylesheet for my notes site is one small file.&lt;/p&gt;
+&lt;p&gt;That matters to me. Many people here in Kampala browse on mobile data, and every kilobyte costs money. A style built from borders and flat fills loads fast on a slow connection.&lt;/p&gt;
+&lt;h2 id=&quot;where-i-toned-it-down&quot;&gt;Where I toned it down&lt;/h2&gt;
+&lt;p&gt;Classic neobrutalism is loud: bright yellow, pink and cyan, all on one page. My first version of the notes site used yellow and cyan, and it felt more like a toy than a portfolio. So I set some rules:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Muted colours.&lt;/strong&gt; A dark charcoal background, steel-grey cards and one accent: a muted amber. One accent means your eye knows where to look.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sharp corners only.&lt;/strong&gt; No rounded corners. The grid stays clean.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Instant states.&lt;/strong&gt; Hover and press change at once. No transitions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Big blocks stay calm.&lt;/strong&gt; Buttons fill with amber on hover. Cards only change their shadow, because flashing a whole card of text amber is tiring to read.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Contrast first.&lt;/strong&gt; Every text colour has to pass the WCAG contrast check. That is why text on amber is always dark, never white.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;what-it-taught-me&quot;&gt;What it taught me&lt;/h2&gt;
+&lt;p&gt;Picking a strong style does not mean following it blindly. My first plan had shadows in near-black on a near-black background. They looked fine in a mock-up and vanished on a real screen. I measured the contrast, changed the shadow to a lighter slate, and the boxes came back.&lt;/p&gt;
+&lt;p&gt;A design system is a set of rules you test, not a set of rules you obey. Neobrutalism gave me a clear starting point. Checking it on real screens made it mine.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The CSS for my notes site is &lt;a rel=&quot;external&quot; href=&quot;https://github.com/kaggwe-marvin/kaggwe-marvin-resume/blob/main/static/css/style.css&quot;&gt;on GitHub&lt;/a&gt; if you want to borrow it.&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Why I built Voucher Manager: printing hotspot vouchers on RouterOS 7</title>
+        <published>2026-10-25T00:00:00+00:00</published>
+        <updated>2026-10-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://resume.kaggwemarvinvictor.me/blog/voucher-manager-routeros-7/"/>
+        <id>https://resume.kaggwemarvinvictor.me/blog/voucher-manager-routeros-7/</id>
+        
+        <content type="html" xml:base="https://resume.kaggwemarvinvictor.me/blog/voucher-manager-routeros-7/">&lt;p&gt;If you run a Wi-Fi hotspot on a MikroTik router, you sell access with vouchers: small printed cards with a username and password. A customer pays, gets a card, and logs in.&lt;/p&gt;
+&lt;p&gt;On RouterOS 7 this should be a five-minute job. In practice it is not. That is why I built &lt;a rel=&quot;external&quot; href=&quot;https://github.com/kaggwe-marvin/Voucher-Manager&quot;&gt;Voucher Manager&lt;/a&gt;, a small Windows app that does the whole job in one click.&lt;/p&gt;
+&lt;h2 id=&quot;what-changed-in-routeros-7&quot;&gt;What changed in RouterOS 7&lt;/h2&gt;
+&lt;p&gt;In RouterOS 7, MikroTik rebuilt User Manager from scratch. It uses a new database, new menus and new commands, and old setups have to be migrated across (&lt;a rel=&quot;external&quot; href=&quot;https://help.mikrotik.com/docs/spaces/ROS/pages/2555940/User+Manager&quot;&gt;MikroTik docs&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The new web page at &lt;code&gt;/um/&lt;/code&gt; is for customers. They can check their usage and buy a plan. It is not a tool for an operator who wants to print 50 vouchers before the evening rush. For that, you go back to the command line.&lt;/p&gt;
+&lt;h2 id=&quot;the-five-steps-routeros-7-makes-you-do&quot;&gt;The five steps RouterOS 7 makes you do&lt;/h2&gt;
+&lt;p&gt;To get one sheet of printable vouchers, you have to do all of this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create the users.&lt;/strong&gt; One &lt;code&gt;/user-manager user add&lt;/code&gt; per user, with a name, password and group. There is also an &lt;code&gt;add-batch-users&lt;/code&gt; command that makes random users in bulk, but it does not do the next steps for you.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Give every user a plan.&lt;/strong&gt; A user is linked to a profile (for example &quot;1 day&quot; or &quot;1 week&quot;) with a separate command, once per user:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/user-manager user-profile add user=abc123 profile=1-day
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Generate the vouchers.&lt;/strong&gt; Run &lt;code&gt;generate-voucher&lt;/code&gt; on exactly the users you just made, and name a voucher template that you have already uploaded to the router&#39;s Files:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/user-manager user generate-voucher numbers=*1,*2,*3 voucher-template=printable_vouchers.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Find the output.&lt;/strong&gt; The router writes an HTML file to &lt;code&gt;um5files/PRIVATE/GENERATED/vouchers/gen_printable_vouchers.html&lt;/code&gt;. To open it in a browser, you first need to set a private web username and password in User Manager&#39;s advanced settings. Otherwise you copy it off the router another way, such as FTP.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Print it.&lt;/strong&gt; Open the HTML file and print it, or save it as a PDF.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;None of these steps is hard alone. Together, done by hand for every batch, they are slow and easy to get wrong.&lt;/p&gt;
+&lt;h2 id=&quot;where-it-goes-wrong&quot;&gt;Where it goes wrong&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Forgetting a profile.&lt;/strong&gt; A user with no profile attached has no plan, so the card you hand over may not work as sold.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Generating for the wrong users.&lt;/strong&gt; &lt;code&gt;generate-voucher&lt;/code&gt; needs the internal IDs of the right users. Pick the wrong ones and you print old cards again, or miss new ones.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The file is not ready yet.&lt;/strong&gt; Right after &lt;code&gt;generate-voucher&lt;/code&gt; returns, the HTML file may still be being written. Try to download it too early and you get an error.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Typing plan names by hand.&lt;/strong&gt; One typo in a profile name and the command fails halfway, leaving some users created and others not.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;what-voucher-manager-does-instead&quot;&gt;What Voucher Manager does instead&lt;/h2&gt;
+&lt;p&gt;Voucher Manager talks to the router through its API (port 8728, or 8729 with TLS) and runs every step in order:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Test Connection&lt;/strong&gt; checks your login before anything runs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Refresh&lt;/strong&gt; loads your user groups and profiles straight from the router, so you pick them from a list instead of typing them.&lt;/li&gt;
+&lt;li&gt;It creates each user, attaches the profile you chose, and keeps the ID the router returns.&lt;/li&gt;
+&lt;li&gt;It runs &lt;code&gt;generate-voucher&lt;/code&gt; on exactly those IDs, using your template.&lt;/li&gt;
+&lt;li&gt;It downloads the HTML file over FTP, and retries a few times if the file is not ready yet.&lt;/li&gt;
+&lt;li&gt;It turns the file into a PDF with Microsoft Edge or Chrome, ready to print.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If something fails halfway, it still saves a list of the users it already created next to your PDF. Nothing is left on the router without a record.&lt;/p&gt;
+&lt;p&gt;You can make up to 500 vouchers per batch, with an optional username prefix so you can tell batches apart.&lt;/p&gt;
+&lt;h2 id=&quot;what-i-learned&quot;&gt;What I learned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Read the API, not just the menus.&lt;/strong&gt; The RouterOS API returns the ID of every user you create. Keeping those IDs is what makes &quot;generate vouchers for exactly this batch&quot; reliable.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plan for slow hardware.&lt;/strong&gt; Routers are small computers. Waiting and retrying is part of the design, not a bug fix.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ship it properly.&lt;/strong&gt; I set up a GitHub Actions pipeline that builds a Windows installer and a portable &lt;code&gt;.exe&lt;/code&gt;, with SHA256 checksums, every time I tag a release. People who are not developers can install it like any other app.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;try-it&quot;&gt;Try it&lt;/h2&gt;
+&lt;p&gt;Voucher Manager is free and open source. It needs Windows 10 or 11, and your router needs the API and FTP services turned on, a voucher template in Files, and at least one profile and user group.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://resume.kaggwemarvinvictor.me/downloads/&quot;&gt;Download the latest version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https://github.com/kaggwe-marvin/Voucher-Manager&quot;&gt;Source code on GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you run a MikroTik hotspot and try it, I would like to hear how it goes.&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>How I built my first site: from Hugo to Zola</title>
+        <published>2025-06-27T00:00:00+00:00</published>
+        <updated>2026-10-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://resume.kaggwemarvinvictor.me/blog/how-i-built-this-site/"/>
+        <id>https://resume.kaggwemarvinvictor.me/blog/how-i-built-this-site/</id>
+        
+        <content type="html" xml:base="https://resume.kaggwemarvinvictor.me/blog/how-i-built-this-site/">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Update, October 2026:&lt;/strong&gt; my first site, &lt;a rel=&quot;external&quot; href=&quot;https://kaggwemarvinvictor.me/&quot;&gt;kaggwemarvinvictor.me&lt;/a&gt;, no longer runs on Hugo. I rebuilt it with &lt;a rel=&quot;external&quot; href=&quot;https://www.getzola.org/&quot;&gt;Zola&lt;/a&gt; and my own small template, the same one this site uses. The second half of this post explains why.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Building a personal site had been on my to-do list for ages. Working on the Ordin project finally pushed me to do it, because I needed a place to document my progress and show my work.&lt;/p&gt;
+&lt;h2 id=&quot;version-1-hugo-and-hugo-coder&quot;&gt;Version 1: Hugo and hugo-coder&lt;/h2&gt;
+&lt;p&gt;I wanted a site that was:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Fast:&lt;/strong&gt; static pages load quickly, even on a slow connection&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simple:&lt;/strong&gt; little setup and little to maintain&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flexible:&lt;/strong&gt; easy to change later&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Developer-friendly:&lt;/strong&gt; posts in Markdown, changes tracked in Git&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hugo met all four. Setup on Windows took a few commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;winget install Hugo.Hugo.Extended
+hugo new site resume
+cd resume
+git init
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I picked the &lt;strong&gt;hugo-coder&lt;/strong&gt; theme because it was clean, worked on phones and was still maintained. A GitHub Actions workflow built the site and published it to GitHub Pages on every push, so I could focus on writing instead of servers.&lt;/p&gt;
+&lt;h2 id=&quot;what-i-learned-from-version-1&quot;&gt;What I learned from version 1&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Themes are a package deal.&lt;/strong&gt; A Hugo theme brings its own layouts, styles, scripts and settings. Changing one small thing often meant learning how all the others fit together.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simple wins.&lt;/strong&gt; For a small personal site, I would choose simplicity every time.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ship early, then improve.&lt;/strong&gt; The first version was basic, but it was live. That beat waiting for perfect.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Working on Ordin taught me the same lessons: documentation matters, and small steps beat big rewrites.&lt;/p&gt;
+&lt;h2 id=&quot;version-2-zola-and-my-own-template&quot;&gt;Version 2: Zola and my own template&lt;/h2&gt;
+&lt;p&gt;A year later the site needed a real update. My CV had changed, I had new projects, and the theme carried a lot of code I did not use. So I rebuilt it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Zola instead of Hugo.&lt;/strong&gt; Zola is one small program, and its templates are easy to read.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;My own template instead of a theme.&lt;/strong&gt; Now every line of HTML and CSS is mine and does something.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content as data.&lt;/strong&gt; My work history, projects and websites live in simple TOML lists. Updating my resume means editing a list, not HTML.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Live downloads.&lt;/strong&gt; The Downloads tab reads my latest GitHub releases in the browser, so a new release shows up without rebuilding the site.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The result loads faster, has light and dark modes, prints cleanly, and is easier for me to keep up to date.&lt;/p&gt;
+&lt;h2 id=&quot;what-i-would-tell-myself-at-the-start&quot;&gt;What I would tell myself at the start&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Look past the screenshot when choosing a theme.&lt;/strong&gt; Check how much code you are taking on, not just how it looks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plan your content first.&lt;/strong&gt; Decide what pages you need before choosing tools.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keep old links working.&lt;/strong&gt; When I moved to Zola, I kept the old post addresses, so links people shared still open the right page.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;p&gt;The source code is on GitHub for both &lt;a rel=&quot;external&quot; href=&quot;https://github.com/kaggwe-marvin/kaggwe-marvin-resume&quot;&gt;my first site&lt;/a&gt; and &lt;a rel=&quot;external&quot; href=&quot;https://github.com/kaggwe-marvin/Personal-Resume&quot;&gt;this one&lt;/a&gt;. Feel free to reach out if you have questions about static sites or web development.&lt;/p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Run Linux on Windows 10 or Tiny10 with MSYS2 and QEMU</title>
+        <published>2025-06-27T00:00:00+00:00</published>
+        <updated>2026-10-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://resume.kaggwemarvinvictor.me/blog/msys2-qemu-linux-setup/"/>
+        <id>https://resume.kaggwemarvinvictor.me/blog/msys2-qemu-linux-setup/</id>
+        
+        <content type="html" xml:base="https://resume.kaggwemarvinvictor.me/blog/msys2-qemu-linux-setup/">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Updated October 2026:&lt;/strong&gt; fixed commands that do not work on Windows (&lt;code&gt;-daemonize&lt;/code&gt;, &lt;code&gt;-cpu host&lt;/code&gt; without acceleration, &lt;code&gt;taskkill&lt;/code&gt; flags in MSYS2) and removed an install step for a package that does not exist.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you run Windows 10, or a stripped-down build like Tiny10, and need a small Linux machine, MSYS2 and QEMU are a good fit. They work where WSL or Hyper-V Manager are missing or switched off, and you control every setting.&lt;/p&gt;
+&lt;h2 id=&quot;why-msys2-and-qemu&quot;&gt;Why MSYS2 and QEMU?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Light:&lt;/strong&gt; works on minimal Windows builds like Tiny10&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No WSL or Hyper-V Manager needed:&lt;/strong&gt; QEMU runs as a normal program&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Full control:&lt;/strong&gt; you choose the memory, CPU, disk and network&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Faster with acceleration:&lt;/strong&gt; if your PC supports the Windows Hypervisor Platform, QEMU can use it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;what-you-need&quot;&gt;What you need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows 10, including Tiny10 and other modified builds&lt;/li&gt;
+&lt;li&gt;At least 4 GB of RAM (8 GB is better)&lt;/li&gt;
+&lt;li&gt;At least 20 GB of free disk space&lt;/li&gt;
+&lt;li&gt;Administrator access, only if you want to turn on acceleration (step 2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;step-1-install-msys2&quot;&gt;Step 1: Install MSYS2&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the installer from &lt;a rel=&quot;external&quot; href=&quot;https://www.msys2.org/&quot;&gt;msys2.org&lt;/a&gt; and run it.&lt;/li&gt;
+&lt;li&gt;Open &lt;strong&gt;MSYS2 MINGW64&lt;/strong&gt; from the Start menu. Use this terminal for every command in this guide, because QEMU is installed into the MINGW64 environment.&lt;/li&gt;
+&lt;li&gt;Update everything:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;pacman -Syu
+# If the terminal closes, open MSYS2 MINGW64 again and run:
+pacman -Su
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;step-2-install-qemu-and-turn-on-acceleration-if-you-can&quot;&gt;Step 2: Install QEMU (and turn on acceleration if you can)&lt;/h2&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;pacman -S mingw-w64-x86_64-qemu wget
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;mingw-w64-x86_64-qemu&lt;/code&gt; package already includes &lt;code&gt;qemu-system-x86_64&lt;/code&gt; and &lt;code&gt;qemu-img&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Optional, but much faster:&lt;/strong&gt; turn on the Windows Hypervisor Platform. Open PowerShell as Administrator and run:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;powershell&quot;&gt;Enable-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Restart Windows afterwards. Some Tiny10 builds remove this feature. If the command fails, skip it and use the slower &lt;code&gt;tcg&lt;/code&gt; mode shown below.&lt;/p&gt;
+&lt;h2 id=&quot;step-3-download-a-linux-iso&quot;&gt;Step 3: Download a Linux ISO&lt;/h2&gt;
+&lt;p&gt;This guide uses Ubuntu Server. Get the current LTS ISO from &lt;a rel=&quot;external&quot; href=&quot;https://ubuntu.com/download/server&quot;&gt;ubuntu.com/download/server&lt;/a&gt; and save it into a folder for your VM:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;mkdir -p ~/vms/ubuntu
+cd ~/vms/ubuntu
+# Move the downloaded ISO here, then rename it to keep the commands short:
+mv ubuntu-*-live-server-amd64.iso ubuntu-server.iso
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;step-4-create-a-virtual-disk&quot;&gt;Step 4: Create a virtual disk&lt;/h2&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;qemu-img create -f qcow2 ubuntu.qcow2 20G
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;qcow2&lt;/code&gt; format only uses space on your drive as the VM fills it.&lt;/p&gt;
+&lt;h2 id=&quot;step-5-install-linux&quot;&gt;Step 5: Install Linux&lt;/h2&gt;
+&lt;p&gt;With acceleration (Windows Hypervisor Platform turned on):&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;qemu-system-x86_64 \
+  -accel whpx \
+  -m 2048 -smp 2 \
+  -drive file=ubuntu.qcow2,format=qcow2 \
+  -cdrom ubuntu-server.iso -boot d \
+  -netdev user,id=net0 -device e1000,netdev=net0 \
+  -vga std
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Without acceleration, replace &lt;code&gt;-accel whpx&lt;/code&gt; with &lt;code&gt;-accel tcg -cpu max&lt;/code&gt;. It works everywhere, but it is several times slower.&lt;/p&gt;
+&lt;p&gt;If you see an error about &lt;code&gt;kernel-irqchip&lt;/code&gt;, use &lt;code&gt;-accel whpx,kernel-irqchip=off&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In the installer:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose your language and keyboard.&lt;/li&gt;
+&lt;li&gt;Keep the default network settings.&lt;/li&gt;
+&lt;li&gt;Use the entire (virtual) disk.&lt;/li&gt;
+&lt;li&gt;Create your user. The first user is added to the &lt;code&gt;sudo&lt;/code&gt; group automatically.&lt;/li&gt;
+&lt;li&gt;Tick &lt;strong&gt;Install OpenSSH server&lt;/strong&gt; when asked. This saves a step later.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;step-6-start-the-installed-system&quot;&gt;Step 6: Start the installed system&lt;/h2&gt;
+&lt;p&gt;After the installer finishes, close QEMU and start again without the ISO. This time, forward port 2222 on Windows to port 22 (SSH) in the VM:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;qemu-system-x86_64 \
+  -accel whpx \
+  -m 2048 -smp 2 \
+  -drive file=ubuntu.qcow2,format=qcow2 \
+  -netdev user,id=net0,hostfwd=tcp::2222-:22 -device e1000,netdev=net0 \
+  -vga std &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;&amp;amp;&lt;/code&gt; at the end runs QEMU in the background so you get your terminal back. (QEMU&#39;s &lt;code&gt;-daemonize&lt;/code&gt; option does not work on Windows.)&lt;/p&gt;
+&lt;p&gt;If you did not install OpenSSH during setup, log in through the QEMU window and run:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;sudo apt update
+sudo apt install openssh-server
+sudo systemctl enable --now ssh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then connect from Windows:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;ssh your_username@localhost -p 2222
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;step-7-make-start-up-scripts&quot;&gt;Step 7: Make start-up scripts&lt;/h2&gt;
+&lt;h3 id=&quot;batch-file-double-click-to-start&quot;&gt;Batch file (double-click to start)&lt;/h3&gt;
+&lt;p&gt;Save this as &lt;code&gt;C:\msys64\home\%USERNAME%\start-ubuntu.bat&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;batch&quot;&gt;@echo off
+cd /d C:\msys64\home\%USERNAME%\vms\ubuntu
+start &amp;quot;Ubuntu VM&amp;quot; C:\msys64\mingw64\bin\qemu-system-x86_64.exe ^
+  -accel whpx ^
+  -m 2048 -smp 2 ^
+  -drive file=ubuntu.qcow2,format=qcow2 ^
+  -netdev user,id=net0,hostfwd=tcp::2222-:22 -device e1000,netdev=net0 ^
+  -display none
+echo Ubuntu VM started. Connect with: ssh your_username@localhost -p 2222
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;start&lt;/code&gt; runs QEMU in its own process, and &lt;code&gt;-display none&lt;/code&gt; hides the window, because you will use SSH.&lt;/p&gt;
+&lt;h3 id=&quot;shell-script-from-msys2-mingw64&quot;&gt;Shell script (from MSYS2 MINGW64)&lt;/h3&gt;
+&lt;p&gt;Save this as &lt;code&gt;~/vms/start-ubuntu.sh&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;#!/bin/bash
+cd ~/vms/ubuntu
+qemu-system-x86_64 \
+  -accel whpx \
+  -m 2048 -smp 2 \
+  -drive file=ubuntu.qcow2,format=qcow2 \
+  -netdev user,id=net0,hostfwd=tcp::2222-:22 -device e1000,netdev=net0 \
+  -display none &amp;amp;
+echo &amp;quot;Ubuntu VM started. Connect with: ssh your_username@localhost -p 2222&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Make it executable and run it:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;chmod +x ~/vms/start-ubuntu.sh
+~/vms/start-ubuntu.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;managing-your-vm&quot;&gt;Managing your VM&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Check that it is running:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;tasklist | grep -i qemu
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Shut it down cleanly&lt;/strong&gt; (from inside the VM):&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;sudo shutdown -h now
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Force it to stop&lt;/strong&gt; (only if it hangs). In MSYS2, Windows-style flags need a double slash, because MSYS2 turns &lt;code&gt;/F&lt;/code&gt; into a file path:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;taskkill //F //IM qemu-system-x86_64.exe
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;From Command Prompt, the normal &lt;code&gt;taskkill /F /IM qemu-system-x86_64.exe&lt;/code&gt; works.&lt;/p&gt;
+&lt;h2 id=&quot;managing-sudo-users-inside-linux&quot;&gt;Managing sudo users inside Linux&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Check your access:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;sudo whoami
+# Should print: root
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Add another sudo user:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;sudo adduser newuser
+sudo usermod -aG sudo newuser
+groups newuser
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Passwordless sudo (optional, and only on a test VM):&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;sudo visudo
+# Add this line at the end:
+your_username ALL=(ALL) NOPASSWD:ALL
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;troubleshooting&quot;&gt;Troubleshooting&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;qemu-system-x86_64: command not found&lt;/code&gt;&lt;/strong&gt;
+You are in the wrong terminal. Open &lt;strong&gt;MSYS2 MINGW64&lt;/strong&gt;, or add it to the path:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;export PATH=&amp;quot;/mingw64/bin:$PATH&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;WHPX: No accelerator found&lt;/code&gt; or the VM will not start with &lt;code&gt;-accel whpx&lt;/code&gt;&lt;/strong&gt;
+The Windows Hypervisor Platform is off or missing (common on Tiny10). Turn it on (step 2), or use &lt;code&gt;-accel tcg -cpu max&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Very slow VM&lt;/strong&gt;
+You are probably running without acceleration. Give it fewer jobs: &lt;code&gt;-smp 2&lt;/code&gt;, 1 to 2 GB of RAM, and Ubuntu Server without a desktop.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Missing DLL errors on Tiny10&lt;/strong&gt;
+Install the latest Microsoft Visual C++ Redistributable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SSH says &quot;connection refused&quot;&lt;/strong&gt;
+The VM may still be booting. Wait a minute. Check that SSH is running inside the VM with &lt;code&gt;systemctl status ssh&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;security-tips&quot;&gt;Security tips&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Use a strong password, or better, SSH keys.&lt;/li&gt;
+&lt;li&gt;Turn on the firewall inside the VM: &lt;code&gt;sudo ufw allow OpenSSH &amp;amp;&amp;amp; sudo ufw enable&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Keep it updated: &lt;code&gt;sudo apt update &amp;amp;&amp;amp; sudo apt upgrade&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Give sudo only to users who need it.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;wrapping-up&quot;&gt;Wrapping up&lt;/h2&gt;
+&lt;p&gt;You now have a full Linux server on Windows 10 or Tiny10, with no WSL and no Hyper-V Manager. It is great for learning Linux administration, testing software, or running tools that only work on Linux.&lt;/p&gt;
+&lt;p&gt;Next ideas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Share a folder between Windows and the VM&lt;/li&gt;
+&lt;li&gt;Back up &lt;code&gt;ubuntu.qcow2&lt;/code&gt; before big changes (or use &lt;code&gt;qemu-img snapshot&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Try other distributions with the same steps&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Connecting a Namecheap domain to Vercel and GitHub Pages</title>
+        <published>2024-11-30T00:00:00+00:00</published>
+        <updated>2026-10-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>Unknown</name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://resume.kaggwemarvinvictor.me/blog/custom-domains-vercel-github-pages/"/>
+        <id>https://resume.kaggwemarvinvictor.me/blog/custom-domains-vercel-github-pages/</id>
+        
+        <content type="html" xml:base="https://resume.kaggwemarvinvictor.me/blog/custom-domains-vercel-github-pages/">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Update, October 2026:&lt;/strong&gt; I did not renew foundug.com, so &lt;a rel=&quot;external&quot; href=&quot;https://foundug.vercel.app&quot;&gt;FoundUG&lt;/a&gt; is back on its free address, &lt;strong&gt;foundug.vercel.app&lt;/strong&gt;. I have also added Part 2, about putting my GitHub Pages sites on my new domain, kaggwemarvinvictor.me, and Part 3, about going back to a free address.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A site on &lt;code&gt;something.vercel.app&lt;/code&gt; or &lt;code&gt;username.github.io&lt;/code&gt; works, but your own domain looks more professional and is easier to remember. I have done this twice, both times with a domain bought on Namecheap:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;foundug.com&lt;/strong&gt; (November 2024) for &lt;a rel=&quot;external&quot; href=&quot;https://foundug.vercel.app&quot;&gt;FoundUG&lt;/a&gt;, a Next.js app on &lt;strong&gt;Vercel&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;kaggwemarvinvictor.me&lt;/strong&gt; (October 2026) for my sites on &lt;strong&gt;GitHub Pages&lt;/strong&gt;. I got the &lt;code&gt;.me&lt;/code&gt; domain free for a year from Namecheap through the &lt;a rel=&quot;external&quot; href=&quot;https://education.github.com/pack&quot;&gt;GitHub Student Developer Pack&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;the-idea-in-one-paragraph&quot;&gt;The idea in one paragraph&lt;/h2&gt;
+&lt;p&gt;A domain is just a name. DNS records tell the internet which server that name points to. You add those records at the place you bought the domain (Namecheap), and you tell the host (Vercel or GitHub) which domain to expect. When both sides agree, the host gives you a free HTTPS certificate.&lt;/p&gt;
+&lt;p&gt;There are two kinds of records you will use:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;A record:&lt;/strong&gt; points a name to an IP address, like &lt;code&gt;185.199.108.153&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CNAME record:&lt;/strong&gt; points a name to another name, like &lt;code&gt;kaggwe-marvin.github.io&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;part-1-namecheap-to-vercel-foundug-com-november-2024&quot;&gt;Part 1: Namecheap to Vercel (foundug.com, November 2024)&lt;/h2&gt;
+&lt;h3 id=&quot;step-1-add-the-domain-in-vercel&quot;&gt;Step 1: Add the domain in Vercel&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open your project in Vercel.&lt;/li&gt;
+&lt;li&gt;Go to &lt;strong&gt;Settings → Domains&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;foundug.com&lt;/code&gt; and click &lt;strong&gt;Add&lt;/strong&gt;. Choose to add &lt;code&gt;www.foundug.com&lt;/code&gt; too, and redirect it to the main domain.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Vercel then shows the DNS records it wants. They show as &quot;Invalid Configuration&quot; until you add them.&lt;/p&gt;
+&lt;h3 id=&quot;step-2-add-the-records-in-namecheap&quot;&gt;Step 2: Add the records in Namecheap&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;In Namecheap, go to &lt;strong&gt;Domain List&lt;/strong&gt; and click &lt;strong&gt;Manage&lt;/strong&gt; next to the domain.&lt;/li&gt;
+&lt;li&gt;Open the &lt;strong&gt;Advanced DNS&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Delete the parking records&lt;/strong&gt; Namecheap adds by default (a &lt;code&gt;CNAME&lt;/code&gt; for &lt;code&gt;www&lt;/code&gt; pointing to &lt;code&gt;parkingpage.namecheap.com&lt;/code&gt; and a &lt;code&gt;URL Redirect&lt;/code&gt; record). If you skip this, they clash with the new records.&lt;/li&gt;
+&lt;li&gt;Add these two records:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Host&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;A Record&lt;/td&gt;&lt;td&gt;&lt;code&gt;@&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;76.76.21.21&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;CNAME Record&lt;/td&gt;&lt;td&gt;&lt;code&gt;www&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;cname.vercel-dns.com.&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;@&lt;/code&gt; means the domain itself (&lt;code&gt;foundug.com&lt;/code&gt;). Always copy the values from your Vercel dashboard, since Vercel can change them.&lt;/p&gt;
+&lt;h3 id=&quot;step-3-wait-and-check&quot;&gt;Step 3: Wait and check&lt;/h3&gt;
+&lt;p&gt;Go back to &lt;strong&gt;Settings → Domains&lt;/strong&gt; in Vercel. Within a few minutes to an hour, both domains turn green and Vercel adds HTTPS by itself. That is it: every push to GitHub still deploys as before, now on your own domain.&lt;/p&gt;
+&lt;p&gt;The free &lt;code&gt;foundug.vercel.app&lt;/code&gt; address keeps working the whole time. That turned out to matter (see Part 3).&lt;/p&gt;
+&lt;h2 id=&quot;part-2-namecheap-to-github-pages-kaggwemarvinvictor-me-october-2026&quot;&gt;Part 2: Namecheap to GitHub Pages (kaggwemarvinvictor.me, October 2026)&lt;/h2&gt;
+&lt;p&gt;I have two Zola sites on GitHub Pages. I wanted my notes site on the main domain and my resume on a subdomain:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;kaggwemarvinvictor.me&lt;/code&gt; → the &lt;a rel=&quot;external&quot; href=&quot;https://github.com/kaggwe-marvin/kaggwe-marvin-resume&quot;&gt;kaggwe-marvin-resume&lt;/a&gt; repo&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;resume.kaggwemarvinvictor.me&lt;/code&gt; → the &lt;a rel=&quot;external&quot; href=&quot;https://github.com/kaggwe-marvin/Personal-Resume&quot;&gt;Personal-Resume&lt;/a&gt; repo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;step-1-add-the-records-in-namecheap&quot;&gt;Step 1: Add the records in Namecheap&lt;/h3&gt;
+&lt;p&gt;In &lt;strong&gt;Advanced DNS&lt;/strong&gt;, delete the parking records, then add:&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Type&lt;/th&gt;&lt;th&gt;Host&lt;/th&gt;&lt;th&gt;Value&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;A Record&lt;/td&gt;&lt;td&gt;&lt;code&gt;@&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;185.199.108.153&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;A Record&lt;/td&gt;&lt;td&gt;&lt;code&gt;@&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;185.199.109.153&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;A Record&lt;/td&gt;&lt;td&gt;&lt;code&gt;@&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;185.199.110.153&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;A Record&lt;/td&gt;&lt;td&gt;&lt;code&gt;@&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;185.199.111.153&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;CNAME Record&lt;/td&gt;&lt;td&gt;&lt;code&gt;www&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;kaggwe-marvin.github.io.&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;CNAME Record&lt;/td&gt;&lt;td&gt;&lt;code&gt;resume&lt;/code&gt;&lt;/td&gt;&lt;td&gt;&lt;code&gt;kaggwe-marvin.github.io.&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;The four A records are GitHub Pages&#39; addresses. The CNAME records point to &lt;strong&gt;your username address&lt;/strong&gt;, not the repo name. GitHub works out which repo to show from the domain each repo claims.&lt;/p&gt;
+&lt;h3 id=&quot;step-2-tell-each-repo-its-domain&quot;&gt;Step 2: Tell each repo its domain&lt;/h3&gt;
+&lt;p&gt;For each repo, go to &lt;strong&gt;Settings → Pages&lt;/strong&gt;, type the domain under &lt;strong&gt;Custom domain&lt;/strong&gt; and click &lt;strong&gt;Save&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;kaggwemarvinvictor.me&lt;/code&gt; in kaggwe-marvin-resume&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;resume.kaggwemarvinvictor.me&lt;/code&gt; in Personal-Resume&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If a site is published from a branch (like &lt;code&gt;gh-pages&lt;/code&gt;), this setting is stored in a file called &lt;code&gt;CNAME&lt;/code&gt; in that branch. I also keep a &lt;code&gt;static/CNAME&lt;/code&gt; file in each Zola site, so the domain survives every rebuild.&lt;/p&gt;
+&lt;h3 id=&quot;step-3-update-the-site-s-own-address&quot;&gt;Step 3: Update the site&#39;s own address&lt;/h3&gt;
+&lt;p&gt;Static site generators build full links from a base address. In Zola that is &lt;code&gt;base_url&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;toml&quot;&gt;base_url = &amp;quot;https://kaggwemarvinvictor.me&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you forget this, the pages load but the styles and links still point to the old &lt;code&gt;github.io&lt;/code&gt; address.&lt;/p&gt;
+&lt;h3 id=&quot;step-4-turn-on-https&quot;&gt;Step 4: Turn on HTTPS&lt;/h3&gt;
+&lt;p&gt;Back in &lt;strong&gt;Settings → Pages&lt;/strong&gt;, wait for the DNS check to pass, then tick &lt;strong&gt;Enforce HTTPS&lt;/strong&gt;. If the box is greyed out, GitHub is still making the certificate. Give it up to an hour.&lt;/p&gt;
+&lt;p&gt;Old &lt;code&gt;kaggwe-marvin.github.io/...&lt;/code&gt; links keep working. GitHub redirects them to the new domain.&lt;/p&gt;
+&lt;h2 id=&quot;part-3-when-a-domain-expires-foundug-com-2026&quot;&gt;Part 3: When a domain expires (foundug.com, 2026)&lt;/h2&gt;
+&lt;p&gt;A domain is rented, not owned. I chose not to renew foundug.com, and once it expired the name stopped working. The app itself was fine, because Vercel still served it at foundug.vercel.app. Moving back took three small steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;In Vercel&lt;/strong&gt;, go to &lt;strong&gt;Settings → Domains&lt;/strong&gt; and remove &lt;code&gt;foundug.com&lt;/code&gt; and &lt;code&gt;www.foundug.com&lt;/code&gt;. Now &lt;code&gt;foundug.vercel.app&lt;/code&gt; is the main address again.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;In your code&lt;/strong&gt;, change any place that names the old domain: links, the site URL in your config, and auth or email settings (for example, allowed redirect URLs in Supabase).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Everywhere else&lt;/strong&gt;, update the link: your CV, GitHub repo description and portfolio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Lesson: before you buy a domain, decide whether you will pay for it next year too. If not, keep sharing the free address, so links in old CVs and posts never break.&lt;/p&gt;
+&lt;h2 id=&quot;mistakes-i-made-so-you-can-skip-them&quot;&gt;Mistakes I made, so you can skip them&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Putting the domain on the wrong repo.&lt;/strong&gt; I first set the domain on my &lt;code&gt;username.github.io&lt;/code&gt; repo, which was empty. On GitHub Pages, a domain on that special repo moves &lt;em&gt;every&lt;/em&gt; project site under it. My resume ended up at &lt;code&gt;kaggwemarvinvictor.me/Personal-Resume/&lt;/code&gt;. A domain can only belong to one repo, so I had to remove it there before I could add it to the right one.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Leaving the parking records.&lt;/strong&gt; Namecheap&#39;s default records clash with yours. Delete them first.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changing &lt;code&gt;base_url&lt;/code&gt; too early.&lt;/strong&gt; If you push the new address before the domain is connected, the site loads without its styles. Connect the domain first, then push.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;which-one-is-easier&quot;&gt;Which one is easier?&lt;/h2&gt;
+&lt;p&gt;Vercel is easier: two records, and it guides you through them. GitHub Pages needs a few more records and one extra setting per repo, but it is free and works well for static sites like mine.&lt;/p&gt;
+&lt;p&gt;Either way, the pattern is the same: &lt;strong&gt;add records at Namecheap, add the domain at the host, wait, then turn on HTTPS.&lt;/strong&gt; And set a reminder for the renewal date.&lt;/p&gt;
+</content>
+        
+    </entry>
+</feed>

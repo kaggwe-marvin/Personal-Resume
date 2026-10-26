@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecting a Namecheap domain to Vercel and GitHub Pages | Kaggwe Marvin Victor</title>
+    <meta name="description" content="Step by step: how I pointed a Namecheap domain at a Next.js app on Vercel, and how I put two GitHub Pages sites on my own .me domain and subdomain.">
+    <meta name="author" content="Kaggwe Marvin Victor">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://resume.kaggwemarvinvictor.me/blog/custom-domains-vercel-github-pages/">
+
+    <meta property="og:site_name" content="Kaggwe Marvin Victor">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Connecting a Namecheap domain to Vercel and GitHub Pages | Kaggwe Marvin Victor">
+    <meta property="og:description" content="Step by step: how I pointed a Namecheap domain at a Next.js app on Vercel, and how I put two GitHub Pages sites on my own .me domain and subdomain.">
+    <meta property="og:url" content="https://resume.kaggwemarvinvictor.me/blog/custom-domains-vercel-github-pages/">
+    <meta property="og:image" content="https://resume.kaggwemarvinvictor.me/images/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Kaggwe Marvin Victor, Full-Stack Developer, Kampala, Uganda">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Connecting a Namecheap domain to Vercel and GitHub Pages | Kaggwe Marvin Victor">
+    <meta name="twitter:description" content="Step by step: how I pointed a Namecheap domain at a Next.js app on Vercel, and how I put two GitHub Pages sites on my own .me domain and subdomain.">
+    <meta name="twitter:image" content="https://resume.kaggwemarvinvictor.me/images/og.png">
+    
+
+    <link rel="icon" href="https://resume.kaggwemarvinvictor.me/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://resume.kaggwemarvinvictor.me/images/apple-touch-icon.png">
+    <meta name="theme-color" content="#1d4ed8">
+    <link rel="alternate" type="application/atom+xml" title="Kaggwe Marvin Victor: Blog" href="https://resume.kaggwemarvinvictor.me/blog/atom.xml">
+    <link rel="stylesheet" href="https://resume.kaggwemarvinvictor.me/css/style.css?h=9553d188f5f019cc3cac">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://resume.kaggwemarvinvictor.me/#person",
+                "name": "Kaggwe Marvin Victor",
+                "alternateName": ["Kaggwe Marvin","Marvin Kaggwe","Marvin Victor Kaggwe","Kaggwe Victor"],
+                "jobTitle": "Full-Stack Developer",
+                "url": "https://resume.kaggwemarvinvictor.me/",
+                "image": "https://resume.kaggwemarvinvictor.me/images/og.png",
+                "email": "mailto:kaggwemarvin@gmail.com",
+                "address": {"@type": "PostalAddress", "addressLocality": "Kampala", "addressCountry": "UG"},
+                "alumniOf": {"@type": "CollegeOrUniversity", "name": "Makerere University Business School"},
+                "knowsAbout": ["Python","Django","Django REST Framework","TypeScript","JavaScript","SQL","PostgreSQL","REST APIs","GitHub Actions","MikroTik RouterOS","ERP systems","Web development","Mobile money payments (MTN MoMo, Airtel Money)","Double-entry accounting","IT support","Systems analysis and design"],
+                "sameAs": ["https://github.com/kaggwe-marvin","https://kaggwemarvinvictor.me/"]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://resume.kaggwemarvinvictor.me/#website",
+                "url": "https://resume.kaggwemarvinvictor.me/",
+                "name": "Kaggwe Marvin Victor",
+                "description": "Kaggwe Marvin Victor is a full-stack developer in Kampala, Uganda, available for freelance work. He builds websites, web apps and desktop apps with Python, Django and TypeScript.",
+                "inLanguage": "en",
+                "publisher": {"@id": "https://resume.kaggwemarvinvictor.me/#person"}
+            },
+            {
+                "@type": "BlogPosting",
+                "@id": "https://resume.kaggwemarvinvictor.me/blog/custom-domains-vercel-github-pages/#post",
+                "headline": "Connecting a Namecheap domain to Vercel and GitHub Pages",
+                "description": "Step by step: how I pointed a Namecheap domain at a Next.js app on Vercel, and how I put two GitHub Pages sites on my own .me domain and subdomain.",
+                "url": "https://resume.kaggwemarvinvictor.me/blog/custom-domains-vercel-github-pages/",
+                "mainEntityOfPage": "https://resume.kaggwemarvinvictor.me/blog/custom-domains-vercel-github-pages/",
+                "datePublished": "2024-11-30",
+                "dateModified": "2026-10-26",
+                "author": {"@id": "https://resume.kaggwemarvinvictor.me/#person"},
+                "publisher": {"@id": "https://resume.kaggwemarvinvictor.me/#person"},
+                "image": "https://resume.kaggwemarvinvictor.me/images/og.png",
+                "wordCount": 1049,
+                "inLanguage": "en"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://resume.kaggwemarvinvictor.me/"},
+                    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://resume.kaggwemarvinvictor.me/blog"},
+                    {"@type": "ListItem", "position": 3, "name": "Connecting a Namecheap domain to Vercel and GitHub Pages", "item": "https://resume.kaggwemarvinvictor.me/blog/custom-domains-vercel-github-pages/"}
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <main class="page">
+        <header class="header">
+            <div>
+                <p class="name">Kaggwe Marvin Victor</p>
+                <p class="role">Full-Stack Developer</p>
+            </div>
+            <ul class="contact">
+                <li>Kampala, Uganda</li>
+                <li><a href="mailto:kaggwemarvin@gmail.com">kaggwemarvin@gmail.com</a></li>
+                <li><a href="tel:+256788320104">+256 788 320 104</a></li>
+                <li><a href="https://github.com/kaggwe-marvin" rel="me">github.com/kaggwe-marvin</a></li>
+            </ul>
+        </header>
+
+        <nav class="tabs" aria-label="Site">
+            <a href="https://resume.kaggwemarvinvictor.me" >Resume</a>
+            <a href="https://resume.kaggwemarvinvictor.me/hire" >Hire me</a>
+            <a href="https://resume.kaggwemarvinvictor.me/blog" aria-current="page">Blog</a>
+            <a href="https://resume.kaggwemarvinvictor.me/results" >Results</a>
+            <a href="https://resume.kaggwemarvinvictor.me/websites" >Websites</a>
+            <a href="https://resume.kaggwemarvinvictor.me/downloads" >Downloads</a>
+        </nav>
+
+        
+<article class="post">
+    <p class="back"><a href="https://resume.kaggwemarvinvictor.me/blog">&larr; All posts</a></p>
+    <h1>Connecting a Namecheap domain to Vercel and GitHub Pages</h1>
+    <p class="period"><time datetime="2024-11-30">30 November 2024</time> · 5 min read · Updated <time datetime="2026-10-26">26 October 2026</time></p>
+    <blockquote>
+<p><strong>Update, October 2026:</strong> I did not renew foundug.com, so <a rel="external" href="https://foundug.vercel.app">FoundUG</a> is back on its free address, <strong>foundug.vercel.app</strong>. I have also added Part 2, about putting my GitHub Pages sites on my new domain, kaggwemarvinvictor.me, and Part 3, about going back to a free address.</p>
+</blockquote>
+<p>A site on <code>something.vercel.app</code> or <code>username.github.io</code> works, but your own domain looks more professional and is easier to remember. I have done this twice, both times with a domain bought on Namecheap:</p>
+<ol>
+<li><strong>foundug.com</strong> (November 2024) for <a rel="external" href="https://foundug.vercel.app">FoundUG</a>, a Next.js app on <strong>Vercel</strong>.</li>
+<li><strong>kaggwemarvinvictor.me</strong> (October 2026) for my sites on <strong>GitHub Pages</strong>. I got the <code>.me</code> domain free for a year from Namecheap through the <a rel="external" href="https://education.github.com/pack">GitHub Student Developer Pack</a>.</li>
+</ol>
+<h2 id="the-idea-in-one-paragraph">The idea in one paragraph</h2>
+<p>A domain is just a name. DNS records tell the internet which server that name points to. You add those records at the place you bought the domain (Namecheap), and you tell the host (Vercel or GitHub) which domain to expect. When both sides agree, the host gives you a free HTTPS certificate.</p>
+<p>There are two kinds of records you will use:</p>
+<ul>
+<li><strong>A record:</strong> points a name to an IP address, like <code>185.199.108.153</code>.</li>
+<li><strong>CNAME record:</strong> points a name to another name, like <code>kaggwe-marvin.github.io</code>.</li>
+</ul>
+<h2 id="part-1-namecheap-to-vercel-foundug-com-november-2024">Part 1: Namecheap to Vercel (foundug.com, November 2024)</h2>
+<h3 id="step-1-add-the-domain-in-vercel">Step 1: Add the domain in Vercel</h3>
+<ol>
+<li>Open your project in Vercel.</li>
+<li>Go to <strong>Settings → Domains</strong>.</li>
+<li>Type <code>foundug.com</code> and click <strong>Add</strong>. Choose to add <code>www.foundug.com</code> too, and redirect it to the main domain.</li>
+</ol>
+<p>Vercel then shows the DNS records it wants. They show as "Invalid Configuration" until you add them.</p>
+<h3 id="step-2-add-the-records-in-namecheap">Step 2: Add the records in Namecheap</h3>
+<ol>
+<li>In Namecheap, go to <strong>Domain List</strong> and click <strong>Manage</strong> next to the domain.</li>
+<li>Open the <strong>Advanced DNS</strong> tab.</li>
+<li><strong>Delete the parking records</strong> Namecheap adds by default (a <code>CNAME</code> for <code>www</code> pointing to <code>parkingpage.namecheap.com</code> and a <code>URL Redirect</code> record). If you skip this, they clash with the new records.</li>
+<li>Add these two records:</li>
+</ol>
+<table><thead><tr><th>Type</th><th>Host</th><th>Value</th></tr></thead><tbody>
+<tr><td>A Record</td><td><code>@</code></td><td><code>76.76.21.21</code></td></tr>
+<tr><td>CNAME Record</td><td><code>www</code></td><td><code>cname.vercel-dns.com.</code></td></tr>
+</tbody></table>
+<p><code>@</code> means the domain itself (<code>foundug.com</code>). Always copy the values from your Vercel dashboard, since Vercel can change them.</p>
+<h3 id="step-3-wait-and-check">Step 3: Wait and check</h3>
+<p>Go back to <strong>Settings → Domains</strong> in Vercel. Within a few minutes to an hour, both domains turn green and Vercel adds HTTPS by itself. That is it: every push to GitHub still deploys as before, now on your own domain.</p>
+<p>The free <code>foundug.vercel.app</code> address keeps working the whole time. That turned out to matter (see Part 3).</p>
+<h2 id="part-2-namecheap-to-github-pages-kaggwemarvinvictor-me-october-2026">Part 2: Namecheap to GitHub Pages (kaggwemarvinvictor.me, October 2026)</h2>
+<p>I have two Zola sites on GitHub Pages. I wanted my notes site on the main domain and my resume on a subdomain:</p>
+<ul>
+<li><code>kaggwemarvinvictor.me</code> → the <a rel="external" href="https://github.com/kaggwe-marvin/kaggwe-marvin-resume">kaggwe-marvin-resume</a> repo</li>
+<li><code>resume.kaggwemarvinvictor.me</code> → the <a rel="external" href="https://github.com/kaggwe-marvin/Personal-Resume">Personal-Resume</a> repo</li>
+</ul>
+<h3 id="step-1-add-the-records-in-namecheap">Step 1: Add the records in Namecheap</h3>
+<p>In <strong>Advanced DNS</strong>, delete the parking records, then add:</p>
+<table><thead><tr><th>Type</th><th>Host</th><th>Value</th></tr></thead><tbody>
+<tr><td>A Record</td><td><code>@</code></td><td><code>185.199.108.153</code></td></tr>
+<tr><td>A Record</td><td><code>@</code></td><td><code>185.199.109.153</code></td></tr>
+<tr><td>A Record</td><td><code>@</code></td><td><code>185.199.110.153</code></td></tr>
+<tr><td>A Record</td><td><code>@</code></td><td><code>185.199.111.153</code></td></tr>
+<tr><td>CNAME Record</td><td><code>www</code></td><td><code>kaggwe-marvin.github.io.</code></td></tr>
+<tr><td>CNAME Record</td><td><code>resume</code></td><td><code>kaggwe-marvin.github.io.</code></td></tr>
+</tbody></table>
+<p>The four A records are GitHub Pages' addresses. The CNAME records point to <strong>your username address</strong>, not the repo name. GitHub works out which repo to show from the domain each repo claims.</p>
+<h3 id="step-2-tell-each-repo-its-domain">Step 2: Tell each repo its domain</h3>
+<p>For each repo, go to <strong>Settings → Pages</strong>, type the domain under <strong>Custom domain</strong> and click <strong>Save</strong>:</p>
+<ul>
+<li><code>kaggwemarvinvictor.me</code> in kaggwe-marvin-resume</li>
+<li><code>resume.kaggwemarvinvictor.me</code> in Personal-Resume</li>
+</ul>
+<p>If a site is published from a branch (like <code>gh-pages</code>), this setting is stored in a file called <code>CNAME</code> in that branch. I also keep a <code>static/CNAME</code> file in each Zola site, so the domain survives every rebuild.</p>
+<h3 id="step-3-update-the-site-s-own-address">Step 3: Update the site's own address</h3>
+<p>Static site generators build full links from a base address. In Zola that is <code>base_url</code> in <code>config.toml</code>:</p>
+<pre><code data-lang="toml">base_url = &quot;https://kaggwemarvinvictor.me&quot;
+</code></pre>
+<p>If you forget this, the pages load but the styles and links still point to the old <code>github.io</code> address.</p>
+<h3 id="step-4-turn-on-https">Step 4: Turn on HTTPS</h3>
+<p>Back in <strong>Settings → Pages</strong>, wait for the DNS check to pass, then tick <strong>Enforce HTTPS</strong>. If the box is greyed out, GitHub is still making the certificate. Give it up to an hour.</p>
+<p>Old <code>kaggwe-marvin.github.io/...</code> links keep working. GitHub redirects them to the new domain.</p>
+<h2 id="part-3-when-a-domain-expires-foundug-com-2026">Part 3: When a domain expires (foundug.com, 2026)</h2>
+<p>A domain is rented, not owned. I chose not to renew foundug.com, and once it expired the name stopped working. The app itself was fine, because Vercel still served it at foundug.vercel.app. Moving back took three small steps:</p>
+<ol>
+<li><strong>In Vercel</strong>, go to <strong>Settings → Domains</strong> and remove <code>foundug.com</code> and <code>www.foundug.com</code>. Now <code>foundug.vercel.app</code> is the main address again.</li>
+<li><strong>In your code</strong>, change any place that names the old domain: links, the site URL in your config, and auth or email settings (for example, allowed redirect URLs in Supabase).</li>
+<li><strong>Everywhere else</strong>, update the link: your CV, GitHub repo description and portfolio.</li>
+</ol>
+<p>Lesson: before you buy a domain, decide whether you will pay for it next year too. If not, keep sharing the free address, so links in old CVs and posts never break.</p>
+<h2 id="mistakes-i-made-so-you-can-skip-them">Mistakes I made, so you can skip them</h2>
+<ol>
+<li><strong>Putting the domain on the wrong repo.</strong> I first set the domain on my <code>username.github.io</code> repo, which was empty. On GitHub Pages, a domain on that special repo moves <em>every</em> project site under it. My resume ended up at <code>kaggwemarvinvictor.me/Personal-Resume/</code>. A domain can only belong to one repo, so I had to remove it there before I could add it to the right one.</li>
+<li><strong>Leaving the parking records.</strong> Namecheap's default records clash with yours. Delete them first.</li>
+<li><strong>Changing <code>base_url</code> too early.</strong> If you push the new address before the domain is connected, the site loads without its styles. Connect the domain first, then push.</li>
+</ol>
+<h2 id="which-one-is-easier">Which one is easier?</h2>
+<p>Vercel is easier: two records, and it guides you through them. GitHub Pages needs a few more records and one extra setting per repo, but it is free and works well for static sites like mine.</p>
+<p>Either way, the pattern is the same: <strong>add records at Namecheap, add the domain at the host, wait, then turn on HTTPS.</strong> And set a reminder for the renewal date.</p>
+
+</article>
+
+
+        <footer class="footer">
+            <p>&copy; 2026 Kaggwe Marvin Victor · <a href="https://resume.kaggwemarvinvictor.me/blog/atom.xml">RSS feed</a></p>
+        </footer>
+    </main>
+    
+</body>
+
+</html>
