@@ -63,6 +63,7 @@
                 "@type": "Person",
                 "@id": "{{ config.base_url }}/#person",
                 "name": {{ config.extra.name | json_encode() | safe }},
+                "alternateName": {{ config.extra.alternate_names | json_encode() | safe }},
                 "jobTitle": {{ config.extra.role | json_encode() | safe }},
                 "url": "{{ config.base_url }}/",
                 "image": "{{ image_url }}",
