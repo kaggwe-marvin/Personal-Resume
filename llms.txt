@@ -1,0 +1,48 @@
+# Kaggwe Marvin Victor
+
+> Kaggwe Marvin Victor is a full-stack developer based in Kampala, Uganda. He builds web and desktop apps with Python, Django and TypeScript, and is a final-year Bachelor of Business Computing student at Makerere University Business School (CGPA 3.95/5.0, graduating February 2027).
+
+## Key facts
+
+- Name: Kaggwe Marvin Victor (also written Marvin Kaggwe)
+- Role: Full-Stack Developer
+- Location: Kampala, Uganda
+- Education: Bachelor of Business Computing, Makerere University Business School (MUBS), 2020 to February 2027, Second Class Upper, CGPA 3.95/5.0
+- Current work: Digital Business Manager at Florida Guest House, Kireka (2020 to present); Sales and Technical Support Associate at Della Electronics (June 2024 to present)
+- Past work: Data Entry Operator (seasonal) at the Uganda National Examinations Board (2022 to 2025); Records Clerk at MMK Construction Ltd, Namanve (2023)
+- Main skills: Python, Django, Django REST Framework, TypeScript, JavaScript, SQL, PostgreSQL, GitHub Actions, MikroTik RouterOS, IT support
+- Open to: junior developer, business systems and IT roles, in Kampala or remote
+- Freelance: available for freelance projects (websites, booking and mobile money payments, Django business systems, MikroTik hotspots, IT support). Details: https://resume.kaggwemarvinvictor.me/hire/
+- Contact: kaggwemarvin@gmail.com
+- GitHub: https://github.com/kaggwe-marvin
+
+## Pages
+
+- [Resume](https://resume.kaggwemarvinvictor.me/): work experience, projects, education and skills
+- [Blog](https://resume.kaggwemarvinvictor.me/blog/): posts about the software he builds
+- [Hire me](https://resume.kaggwemarvinvictor.me/hire/): freelance services in Kampala, Uganda, with examples of real work
+- [Results](https://resume.kaggwemarvinvictor.me/results/): full academic results, every course unit with mark and grade, CGPA 3.95/5.0
+- [Websites](https://resume.kaggwemarvinvictor.me/websites/): live websites he has built
+- [Downloads](https://resume.kaggwemarvinvictor.me/downloads/): free software releases
+
+## Blog posts
+
+- [Connecting a Namecheap domain to Vercel and GitHub Pages](https://resume.kaggwemarvinvictor.me/blog/custom-domains-vercel-github-pages/): step-by-step DNS records for pointing a Namecheap domain at Vercel (A 76.76.21.21, CNAME cname.vercel-dns.com) and at GitHub Pages (four A records, CNAME to username.github.io), plus what to do when a domain expires (foundug.com was not renewed; FoundUG is back on foundug.vercel.app).
+- [Why I'm drawn to neobrutalism, and how I toned it down](https://resume.kaggwemarvinvictor.me/blog/why-neobrutalism/): why neobrutalist web design appeals to him as a developer, and the contrast rules he set for it
+- [Why I built Voucher Manager: printing hotspot vouchers on RouterOS 7](https://resume.kaggwemarvinvictor.me/blog/voucher-manager-routeros-7/): the five manual steps RouterOS 7 User Manager needs to make printable vouchers, and how Voucher Manager automates them
+- [Run Linux on Windows 10 or Tiny10 with MSYS2 and QEMU](https://resume.kaggwemarvinvictor.me/blog/msys2-qemu-linux-setup/): step-by-step guide to an Ubuntu Server VM on Windows without WSL
+- [How I built my first site: from Hugo to Zola](https://resume.kaggwemarvinvictor.me/blog/how-i-built-this-site/): lessons from building and rebuilding a personal site
+
+## Software
+
+- [Voucher Manager](https://github.com/kaggwe-marvin/Voucher-Manager): free Windows app that batch-creates MikroTik User Manager hotspot vouchers through the RouterOS API and prints them as PDF. Download: https://resume.kaggwemarvinvictor.me/downloads/
+- [Custom ERP](https://github.com/kaggwe-marvin/custom-ERP): Django ERP with a double-entry ledger, role-based access control and audit logging
+- [Student Clearance System](https://github.com/kaggwe-marvin/student-clearance-system): role-based university clearance workflow in TypeScript, Hono and Drizzle ORM
+- [Inventory Tracker](https://github.com/kaggwe-marvin/Django-Inventory-tracker): Django stock tracker with low-stock alerts and a rate-limited REST API
+- [Florida Guest House booking app](https://github.com/kaggwe-marvin/florida-booking): room and spa booking with MTN MoMo and Airtel Money payments
+
+## Websites
+
+- [FoundUG](https://foundug.vercel.app): lost and found documents platform for Uganda
+- [Penzi's Cocktail Bar](https://resume.kaggwemarvinvictor.me/penzi): cocktail bar website
+- [Kaggwe Marvin Victor: Notes](https://kaggwemarvinvictor.me): his blog-first personal site

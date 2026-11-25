@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I built my first site: from Hugo to Zola | Kaggwe Marvin Victor</title>
+    <meta name="description" content="How I built my first personal site with Hugo and the hugo-coder theme, why I later moved it to Zola, and what I learned both times.">
+    <meta name="author" content="Kaggwe Marvin Victor">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://resume.kaggwemarvinvictor.me/blog/how-i-built-this-site/">
+
+    <meta property="og:site_name" content="Kaggwe Marvin Victor">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How I built my first site: from Hugo to Zola | Kaggwe Marvin Victor">
+    <meta property="og:description" content="How I built my first personal site with Hugo and the hugo-coder theme, why I later moved it to Zola, and what I learned both times.">
+    <meta property="og:url" content="https://resume.kaggwemarvinvictor.me/blog/how-i-built-this-site/">
+    <meta property="og:image" content="https://resume.kaggwemarvinvictor.me/images/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Kaggwe Marvin Victor, Full-Stack Developer, Kampala, Uganda">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How I built my first site: from Hugo to Zola | Kaggwe Marvin Victor">
+    <meta name="twitter:description" content="How I built my first personal site with Hugo and the hugo-coder theme, why I later moved it to Zola, and what I learned both times.">
+    <meta name="twitter:image" content="https://resume.kaggwemarvinvictor.me/images/og.png">
+    
+
+    <link rel="icon" href="https://resume.kaggwemarvinvictor.me/images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://resume.kaggwemarvinvictor.me/images/apple-touch-icon.png">
+    <meta name="theme-color" content="#1d4ed8">
+    <link rel="alternate" type="application/atom+xml" title="Kaggwe Marvin Victor: Blog" href="https://resume.kaggwemarvinvictor.me/blog/atom.xml">
+    <link rel="stylesheet" href="https://resume.kaggwemarvinvictor.me/css/style.css?h=9553d188f5f019cc3cac">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://resume.kaggwemarvinvictor.me/#person",
+                "name": "Kaggwe Marvin Victor",
+                "alternateName": ["Kaggwe Marvin","Marvin Kaggwe","Marvin Victor Kaggwe","Kaggwe Victor"],
+                "jobTitle": "Full-Stack Developer",
+                "url": "https://resume.kaggwemarvinvictor.me/",
+                "image": "https://resume.kaggwemarvinvictor.me/images/og.png",
+                "email": "mailto:kaggwemarvin@gmail.com",
+                "address": {"@type": "PostalAddress", "addressLocality": "Kampala", "addressCountry": "UG"},
+                "alumniOf": {"@type": "CollegeOrUniversity", "name": "Makerere University Business School"},
+                "knowsAbout": ["Python","Django","Django REST Framework","TypeScript","JavaScript","SQL","PostgreSQL","REST APIs","GitHub Actions","MikroTik RouterOS","ERP systems","Web development","Mobile money payments (MTN MoMo, Airtel Money)","Double-entry accounting","IT support","Systems analysis and design"],
+                "sameAs": ["https://github.com/kaggwe-marvin","https://kaggwemarvinvictor.me/"]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://resume.kaggwemarvinvictor.me/#website",
+                "url": "https://resume.kaggwemarvinvictor.me/",
+                "name": "Kaggwe Marvin Victor",
+                "description": "Kaggwe Marvin Victor is a full-stack developer in Kampala, Uganda, available for freelance work. He builds websites, web apps and desktop apps with Python, Django and TypeScript.",
+                "inLanguage": "en",
+                "publisher": {"@id": "https://resume.kaggwemarvinvictor.me/#person"}
+            },
+            {
+                "@type": "BlogPosting",
+                "@id": "https://resume.kaggwemarvinvictor.me/blog/how-i-built-this-site/#post",
+                "headline": "How I built my first site: from Hugo to Zola",
+                "description": "How I built my first personal site with Hugo and the hugo-coder theme, why I later moved it to Zola, and what I learned both times.",
+                "url": "https://resume.kaggwemarvinvictor.me/blog/how-i-built-this-site/",
+                "mainEntityOfPage": "https://resume.kaggwemarvinvictor.me/blog/how-i-built-this-site/",
+                "datePublished": "2025-06-27",
+                "dateModified": "2026-10-25",
+                "author": {"@id": "https://resume.kaggwemarvinvictor.me/#person"},
+                "publisher": {"@id": "https://resume.kaggwemarvinvictor.me/#person"},
+                "image": "https://resume.kaggwemarvinvictor.me/images/og.png",
+                "wordCount": 510,
+                "inLanguage": "en"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://resume.kaggwemarvinvictor.me/"},
+                    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://resume.kaggwemarvinvictor.me/blog"},
+                    {"@type": "ListItem", "position": 3, "name": "How I built my first site: from Hugo to Zola", "item": "https://resume.kaggwemarvinvictor.me/blog/how-i-built-this-site/"}
+                ]
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+    <main class="page">
+        <header class="header">
+            <div>
+                <p class="name">Kaggwe Marvin Victor</p>
+                <p class="role">Full-Stack Developer</p>
+            </div>
+            <ul class="contact">
+                <li>Kampala, Uganda</li>
+                <li><a href="mailto:kaggwemarvin@gmail.com">kaggwemarvin@gmail.com</a></li>
+                <li><a href="tel:+256788320104">+256 788 320 104</a></li>
+                <li><a href="https://github.com/kaggwe-marvin" rel="me">github.com/kaggwe-marvin</a></li>
+            </ul>
+        </header>
+
+        <nav class="tabs" aria-label="Site">
+            <a href="https://resume.kaggwemarvinvictor.me" >Resume</a>
+            <a href="https://resume.kaggwemarvinvictor.me/hire" >Hire me</a>
+            <a href="https://resume.kaggwemarvinvictor.me/blog" aria-current="page">Blog</a>
+            <a href="https://resume.kaggwemarvinvictor.me/results" >Results</a>
+            <a href="https://resume.kaggwemarvinvictor.me/websites" >Websites</a>
+            <a href="https://resume.kaggwemarvinvictor.me/downloads" >Downloads</a>
+        </nav>
+
+        
+<article class="post">
+    <p class="back"><a href="https://resume.kaggwemarvinvictor.me/blog">&larr; All posts</a></p>
+    <h1>How I built my first site: from Hugo to Zola</h1>
+    <p class="period"><time datetime="2025-06-27">27 June 2025</time> · 3 min read · Updated <time datetime="2026-10-25">25 October 2026</time></p>
+    <blockquote>
+<p><strong>Update, October 2026:</strong> my first site, <a rel="external" href="https://kaggwemarvinvictor.me/">kaggwemarvinvictor.me</a>, no longer runs on Hugo. I rebuilt it with <a rel="external" href="https://www.getzola.org/">Zola</a> and my own small template, the same one this site uses. The second half of this post explains why.</p>
+</blockquote>
+<p>Building a personal site had been on my to-do list for ages. Working on the Ordin project finally pushed me to do it, because I needed a place to document my progress and show my work.</p>
+<h2 id="version-1-hugo-and-hugo-coder">Version 1: Hugo and hugo-coder</h2>
+<p>I wanted a site that was:</p>
+<ul>
+<li><strong>Fast:</strong> static pages load quickly, even on a slow connection</li>
+<li><strong>Simple:</strong> little setup and little to maintain</li>
+<li><strong>Flexible:</strong> easy to change later</li>
+<li><strong>Developer-friendly:</strong> posts in Markdown, changes tracked in Git</li>
+</ul>
+<p>Hugo met all four. Setup on Windows took a few commands:</p>
+<pre><code data-lang="bash">winget install Hugo.Hugo.Extended
+hugo new site resume
+cd resume
+git init
+</code></pre>
+<p>I picked the <strong>hugo-coder</strong> theme because it was clean, worked on phones and was still maintained. A GitHub Actions workflow built the site and published it to GitHub Pages on every push, so I could focus on writing instead of servers.</p>
+<h2 id="what-i-learned-from-version-1">What I learned from version 1</h2>
+<ol>
+<li><strong>Themes are a package deal.</strong> A Hugo theme brings its own layouts, styles, scripts and settings. Changing one small thing often meant learning how all the others fit together.</li>
+<li><strong>Simple wins.</strong> For a small personal site, I would choose simplicity every time.</li>
+<li><strong>Ship early, then improve.</strong> The first version was basic, but it was live. That beat waiting for perfect.</li>
+</ol>
+<p>Working on Ordin taught me the same lessons: documentation matters, and small steps beat big rewrites.</p>
+<h2 id="version-2-zola-and-my-own-template">Version 2: Zola and my own template</h2>
+<p>A year later the site needed a real update. My CV had changed, I had new projects, and the theme carried a lot of code I did not use. So I rebuilt it:</p>
+<ul>
+<li><strong>Zola instead of Hugo.</strong> Zola is one small program, and its templates are easy to read.</li>
+<li><strong>My own template instead of a theme.</strong> Now every line of HTML and CSS is mine and does something.</li>
+<li><strong>Content as data.</strong> My work history, projects and websites live in simple TOML lists. Updating my resume means editing a list, not HTML.</li>
+<li><strong>Live downloads.</strong> The Downloads tab reads my latest GitHub releases in the browser, so a new release shows up without rebuilding the site.</li>
+</ul>
+<p>The result loads faster, has light and dark modes, prints cleanly, and is easier for me to keep up to date.</p>
+<h2 id="what-i-would-tell-myself-at-the-start">What I would tell myself at the start</h2>
+<ol>
+<li><strong>Look past the screenshot when choosing a theme.</strong> Check how much code you are taking on, not just how it looks.</li>
+<li><strong>Plan your content first.</strong> Decide what pages you need before choosing tools.</li>
+<li><strong>Keep old links working.</strong> When I moved to Zola, I kept the old post addresses, so links people shared still open the right page.</li>
+</ol>
+<hr />
+<p>The source code is on GitHub for both <a rel="external" href="https://github.com/kaggwe-marvin/kaggwe-marvin-resume">my first site</a> and <a rel="external" href="https://github.com/kaggwe-marvin/Personal-Resume">this one</a>. Feel free to reach out if you have questions about static sites or web development.</p>
+
+</article>
+
+
+        <footer class="footer">
+            <p>&copy; 2026 Kaggwe Marvin Victor · <a href="https://resume.kaggwemarvinvictor.me/blog/atom.xml">RSS feed</a></p>
+        </footer>
+    </main>
+    
+</body>
+
+</html>
